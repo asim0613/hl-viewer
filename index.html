@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -164,8 +165,13 @@
             font-size: 12px;
         }
 
-        .up { color: var(--green); }
-        .down { color: var(--red); }
+        .up {
+            color: var(--green);
+        }
+
+        .down {
+            color: var(--red);
+        }
 
         .loading {
             text-align: center;
@@ -174,9 +180,17 @@
         }
 
         @keyframes pulse {
-            0% { opacity: 0.6; }
-            50% { opacity: 1; }
-            100% { opacity: 0.6; }
+            0% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.6;
+            }
         }
 
         .updating {
@@ -184,6 +198,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>HL Monitor</h1>
@@ -239,9 +254,9 @@
 
             const perp = data.perp;
             const spot = data.spot;
-            
+
             const accountValue = parseFloat(perp.marginSummary?.accountValue || 0);
-            
+
             let spotUSDC = 0;
             if (spot && spot.balances) {
                 const usdc = spot.balances.find(b => b.coin === 'USDC');
@@ -250,7 +265,7 @@
 
             const totalValue = Math.max(accountValue, spotUSDC);
             const withdrawable = parseFloat(perp.withdrawable || 0);
-            
+
             const positions = (perp.assetPositions || []).filter(p => Math.abs(parseFloat(p.position.szi)) > 0.00001);
 
             let posHTML = '';
@@ -261,9 +276,10 @@
                     const pos = p.position;
                     const coin = pos.coin;
                     const szi = parseFloat(pos.szi);
-                    const pnl = parseFloat(p.type === 'unrealizedPnl' ? p.unrealizedPnl : (p.unrealizedPnl || 0));
+                    // 修正: APIレスポンスでは pos.unrealizedPnl に格納されている
+                    const pnl = parseFloat(pos.unrealizedPnl || 0);
                     const entry = parseFloat(pos.entryPx);
-                    
+
                     const side = szi > 0 ? "LONG" : "SHORT";
                     const pnlClass = pnl >= 0 ? "up" : "down";
                     const pnlSign = pnl >= 0 ? "+" : "";
@@ -312,14 +328,14 @@
             statusEl.innerText = 'Updating...';
 
             const results = await Promise.all(ACCOUNTS.map(acc => fetchAccountData(acc.address)));
-            
+
             let html = '';
             results.forEach((data, i) => {
                 html += createAccountHTML(data, ACCOUNTS[i].name);
             });
 
             document.getElementById('dashboard').innerHTML = html;
-            
+
             const now = new Date();
             statusEl.classList.remove('updating');
             statusEl.innerText = `Updated: ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
@@ -332,4 +348,5 @@
         setInterval(updateDashboard, 30000);
     </script>
 </body>
+
 </html>
