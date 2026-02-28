@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hyperliquid Monitor</title>
+    <style>
+        :root {
+            --bg-color: #0b0e11;
+            --card-bg: rgba(23, 28, 35, 0.8);
+            --text-color: #eaecef;
+            --secondary-text: #929aa5;
+            --accent-blue: #3861fb;
+            --accent-purple: #8a3ffc;
+            --green: #02c076;
+            --red: #f84960;
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            padding: 16px;
+            padding-bottom: 40px;
+        }
+
+        header {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .refresh-status {
+            font-size: 12px;
+            color: var(--secondary-text);
+        }
+
+        .account-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .account-name {
+            font-size: 14px;
+            color: var(--secondary-text);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .account-name::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--accent-blue);
+            border-radius: 50%;
+            margin-right: 8px;
+            box-shadow: 0 0 8px var(--accent-blue);
+        }
+
+        .total-value {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .positions-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .position-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .position-item:last-child {
+            border-bottom: none;
+        }
+
+        .pos-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pos-coin {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .pos-size {
+            font-size: 12px;
+            color: var(--secondary-text);
+        }
+
+        .pos-pnl {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pnl-val {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .pnl-pct {
+            font-size: 12px;
+        }
+
+        .up { color: var(--green); }
+        .down { color: var(--red); }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--secondary-text);
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        .updating {
+            animation: pulse 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HL Monitor</h1>
+        <div id="status" class="refresh-status">Initializing...</div>
+    </header>
+
+    <div id="dashboard">
+        <div class="loading">Loading account data...</div>
+    </div>
+
+    <script>
+        const ACCOUNTS = [
+            { name: "Main Account (key.json)", address: "0x82C23290b1797a32D1C4510C233f7d6F8E944896" },
+            { name: "Sub Account (key2.json)", address: "0xF18E7f6Ada8d2CbE8083206772b07f804A6A6d94" }
+        ];
+
+        async function postData(url = '', data = {}) {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            return response.json();
+        }
+
+        async function fetchAccountData(address) {
+            try {
+                // Fetch Perp state
+                const perpData = await postData('https://api.hyperliquid.xyz/info', {
+                    type: "clearinghouseState",
+                    user: address
+                });
+
+                // Fetch Spot state
+                const spotData = await postData('https://api.hyperliquid.xyz/info', {
+                    type: "spotClearinghouseState",
+                    user: address
+                });
+
+                return { perp: perpData, spot: spotData, address };
+            } catch (error) {
+                console.error(`Error fetching ${address}:`, error);
+                return null;
+            }
+        }
+
+        function formatUSD(val) {
+            return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val);
+        }
+
+        function createAccountHTML(data, name) {
+            if (!data) return `<div class="account-card"><div class="account-name">${name}</div><div class="loading down">Error fetching data</div></div>`;
+
+            const perp = data.perp;
+            const spot = data.spot;
+            
+            const accountValue = parseFloat(perp.marginSummary?.accountValue || 0);
+            
+            let spotUSDC = 0;
+            if (spot && spot.balances) {
+                const usdc = spot.balances.find(b => b.coin === 'USDC');
+                if (usdc) spotUSDC = parseFloat(usdc.total || 0);
+            }
+
+            const totalValue = Math.max(accountValue, spotUSDC);
+            const withdrawable = parseFloat(perp.withdrawable || 0);
+            
+            const positions = (perp.assetPositions || []).filter(p => Math.abs(parseFloat(p.position.szi)) > 0.00001);
+
+            let posHTML = '';
+            if (positions.length === 0) {
+                posHTML = '<div class="secondary-text" style="font-size: 13px; color: #929aa5;">No active positions</div>';
+            } else {
+                positions.forEach(p => {
+                    const pos = p.position;
+                    const coin = pos.coin;
+                    const szi = parseFloat(pos.szi);
+                    const pnl = parseFloat(p.type === 'unrealizedPnl' ? p.unrealizedPnl : (p.unrealizedPnl || 0));
+                    const entry = parseFloat(pos.entryPx);
+                    
+                    const side = szi > 0 ? "LONG" : "SHORT";
+                    const pnlClass = pnl >= 0 ? "up" : "down";
+                    const pnlSign = pnl >= 0 ? "+" : "";
+
+                    posHTML += `
+                        <div class="position-item">
+                            <div class="pos-info">
+                                <span class="pos-coin">${coin} <span style="font-size: 10px; opacity: 0.6;">${side}</span></span>
+                                <span class="pos-size">${Math.abs(szi).toFixed(4)} </span>
+                            </div>
+                            <div class="pos-pnl">
+                                <span class="pnl-val ${pnlClass}">${pnlSign}${formatUSD(pnl)}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            return `
+                <div class="account-card">
+                    <div class="account-name">${name}</div>
+                    <div class="total-value">${formatUSD(totalValue)}</div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-label">Withdrawable</div>
+                            <div class="stat-value">${formatUSD(withdrawable)}</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Spot USDC</div>
+                            <div class="stat-value">${formatUSD(spotUSDC)}</div>
+                        </div>
+                    </div>
+
+                    <div class="positions-title">Active Positions (${positions.length})</div>
+                    <div class="positions-list">
+                        ${posHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        async function updateDashboard() {
+            const statusEl = document.getElementById('status');
+            statusEl.classList.add('updating');
+            statusEl.innerText = 'Updating...';
+
+            const results = await Promise.all(ACCOUNTS.map(acc => fetchAccountData(acc.address)));
+            
+            let html = '';
+            results.forEach((data, i) => {
+                html += createAccountHTML(data, ACCOUNTS[i].name);
+            });
+
+            document.getElementById('dashboard').innerHTML = html;
+            
+            const now = new Date();
+            statusEl.classList.remove('updating');
+            statusEl.innerText = `Updated: ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
+        }
+
+        // Initial load
+        updateDashboard();
+
+        // Refresh every 30 seconds
+        setInterval(updateDashboard, 30000);
+    </script>
+</body>
+</html>
