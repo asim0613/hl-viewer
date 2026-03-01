@@ -467,7 +467,10 @@
                             <span class="status-badge ${statusClass}">${statusText}</span>
                             <span style="font-size: 8px; color: #555;">(Click to config API)</span>
                         </div>
-                        <button class="btn btn-danger" onclick="performAction('${accountId}', 'stop_and_close')">Stop & Close All</button>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="btn" style="background: #333; color: white;" onclick="performAction('test', 'test')">Test Relay</button>
+                            <button class="btn btn-danger" onclick="performAction('${accountId}', 'stop_and_close')">Stop & Close All</button>
+                        </div>
                     </div>
                 </div>
             `;
