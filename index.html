@@ -275,21 +275,36 @@
             { id: "sub", name: "Sub Account (key2.json)", address: "0xF18E7f6Ada8d2CbE8083206772b07f804A6A6d94" }
         ];
 
-        // API URL configuration: Try current host first, fallback to localhost if file://
-        const hostName = window.location.hostname || "localhost";
-        const CONTROL_API_URL = window.location.protocol.startsWith("http")
-            ? `${window.location.protocol}//${hostName}:5001`
-            : `http://localhost:5001`;
+        // API URL configuration
+        let CONTROL_API_URL = localStorage.getItem('control_api_url') ||
+            (window.location.protocol.startsWith("http") && !window.location.hostname.includes("github.io")
+                ? `${window.location.protocol}//${window.location.hostname}:5001`
+                : `http://localhost:5001`);
 
-        async function postData(url = '', data = {}) {
+        function setApiUrl() {
+            const newUrl = prompt("Enter Control Center API URL (e.g. http://VPS_IP:5001)", CONTROL_API_URL);
+            if (newUrl) {
+                CONTROL_API_URL = newUrl;
+                localStorage.setItem('control_api_url', newUrl);
+                updateDashboard();
+            }
+        }
+
+        async function postData(url = '', data = {}, timeout = 10000) {
+            const controller = new AbortController();
+            const id = setTimeout(() => controller.abort(), timeout);
             try {
                 const response = await fetch(url, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
+                    body: JSON.stringify(data),
+                    signal: controller.signal
                 });
-                return response.json();
+                clearTimeout(id);
+                if (!response.ok) return null;
+                return await response.json();
             } catch (e) {
+                clearTimeout(id);
                 console.warn(`Fetch error for ${url}:`, e);
                 return null;
             }
@@ -348,7 +363,7 @@
         function createAccountHTML(data, accountConfig, botStatus) {
             const name = accountConfig.name;
             const accountId = accountConfig.id;
-            if (!data) return `<div class="account-card"><div class="account-name">${name}</div><div class="loading down">Error fetching data</div></div>`;
+            if (!data || !data.perp) return `<div class="account-card"><div class="account-name">${name}</div><div class="loading down">Error fetching perp data</div></div>`;
 
             const perp = data.perp;
             const spot = data.spot;
@@ -374,9 +389,7 @@
                     const pos = p.position;
                     const coin = pos.coin;
                     const szi = parseFloat(pos.szi);
-                    // 修正: APIレスポンスでは pos.unrealizedPnl に格納されている
                     const pnl = parseFloat(pos.unrealizedPnl || 0);
-                    const entry = parseFloat(pos.entryPx);
 
                     const side = szi > 0 ? "LONG" : "SHORT";
                     const pnlClass = pnl >= 0 ? "up" : "down";
@@ -422,8 +435,9 @@
                     </div>
 
                     <div class="control-panel">
-                        <div class="bot-info">
+                        <div class="bot-info" onclick="setApiUrl()" style="cursor: pointer;">
                             <span class="status-badge ${statusClass}">${statusText}</span>
+                            <span style="font-size: 8px; color: #555;">(Click to config API)</span>
                         </div>
                         <button class="btn btn-danger" onclick="performAction('${accountId}', 'stop_and_close')">Stop & Close All</button>
                     </div>
