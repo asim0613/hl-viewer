@@ -436,29 +436,35 @@
             statusEl.classList.add('updating');
             statusEl.innerText = 'Updating...';
 
-            // Fetch HL data
-            const results = await Promise.all(ACCOUNTS.map(acc => fetchAccountData(acc.address)));
-
-            // Fetch Bot status from our new API
-            let botStatuses = null;
             try {
-                const statusRes = await fetch(`${CONTROL_API_URL}/api/status`);
-                botStatuses = await statusRes.json();
-            } catch (e) {
-                console.warn("Control API unavailable");
+                // Fetch HL data
+                const results = await Promise.all(ACCOUNTS.map(acc => fetchAccountData(acc.address)));
+
+                // Fetch Bot status from our new API
+                let botStatuses = null;
+                try {
+                    const statusRes = await fetch(`${CONTROL_API_URL}/api/status`);
+                    botStatuses = await statusRes.json();
+                } catch (e) {
+                    console.warn("Control API unavailable");
+                }
+
+                let html = '';
+                results.forEach((data, i) => {
+                    const acc = ACCOUNTS[i];
+                    html += createAccountHTML(data, acc, botStatuses ? botStatuses[acc.id] : null);
+                });
+
+                document.getElementById('dashboard').innerHTML = html;
+
+                const now = new Date();
+                statusEl.innerText = `Updated: ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
+            } catch (err) {
+                console.error("Dashboard update failed:", err);
+                statusEl.innerText = 'Update Failed';
+            } finally {
+                statusEl.classList.remove('updating');
             }
-
-            let html = '';
-            results.forEach((data, i) => {
-                const acc = ACCOUNTS[i];
-                html += createAccountHTML(data, acc, botStatuses ? botStatuses[acc.id] : null);
-            });
-
-            document.getElementById('dashboard').innerHTML = html;
-
-            const now = new Date();
-            statusEl.classList.remove('updating');
-            statusEl.innerText = `Updated: ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
         }
 
         // Initial load
