@@ -277,8 +277,8 @@
 
         // API URL configuration
         let CONTROL_API_URL = localStorage.getItem('control_api_url') ||
-            (window.location.protocol.startsWith("http") && !window.location.hostname.includes("github.io") && !window.location.hostname.includes("localhost")
-                ? `${window.location.protocol}//${window.location.hostname}:5001`
+            (window.location.port === "5001"
+                ? `${window.location.protocol}//${window.location.hostname}:${window.location.port}`
                 : `http://192.168.2.131:5001`);
 
         function setApiUrl() {
@@ -314,20 +314,48 @@
             const warning = action === "stop_and_close" ? "\n⚠️ POSITIONS WILL BE CLOSED AND BOT WILL STOP." : "";
             if (!confirm(`Really perform ${action} for ${account}?${warning}`)) return;
 
+            // パスコード入力
+            const passcode = prompt("Enter Emergency Passcode (4 digits):");
+            if (!passcode) return;
+
             const btn = event.target;
             const originalText = btn.innerText;
             btn.innerText = "Executing...";
             btn.disabled = true;
 
             try {
-                const res = await postData(`${CONTROL_API_URL}/api/action`, { account, action });
+                // 1. Try Local API first
+                const res = await postData(`${CONTROL_API_URL}/api/action`, { account, action, passcode });
                 if (res && res.success) {
-                    alert(res.message || "Action successful");
+                    alert(res.message || "Action successful (Local API)");
                 } else {
-                    alert("Error: " + (res?.error || "Unknown error"));
+                    // 2. Fallback to Discord Webhook
+                    const webhookUrl = localStorage.getItem('discord_webhook_url');
+                    if (!webhookUrl) {
+                        const newUrl = prompt("Local API failed. Enter Discord Webhook URL for Relay:");
+                        if (newUrl) {
+                            localStorage.setItem('discord_webhook_url', newUrl);
+                        } else {
+                            throw new Error("Local API failed and No Webhook URL provided.");
+                        }
+                    }
+
+                    const relayRes = await fetch(localStorage.getItem('discord_webhook_url'), {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            content: `!${action} ${account} ${passcode}`
+                        })
+                    });
+
+                    if (relayRes.ok) {
+                        alert("Emergency command sent via Discord Relay.");
+                    } else {
+                        throw new Error(`Relay failed: ${relayRes.status}`);
+                    }
                 }
             } catch (e) {
-                alert("Failed to connect to Control API.");
+                alert("Action failed: " + e.message);
             } finally {
                 btn.innerText = originalText;
                 btn.disabled = false;
