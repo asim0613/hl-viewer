@@ -436,10 +436,6 @@
                 });
             }
 
-            const isRunning = botStatus && botStatus.running;
-            const statusClass = isRunning ? "status-running" : "status-stopped";
-            const statusText = isRunning ? "Bot: Running" : "Bot: Stopped";
-
             return `
                 <div class="account-card">
                     <div class="account-name">${name}</div>
@@ -479,29 +475,11 @@
                 // Fetch HL data
                 const results = await Promise.all(ACCOUNTS.map(acc => fetchAccountData(acc.address)));
 
-                // Fetch Bot status from our new API
-                let botStatuses = null;
-                let fetchError = null;
-                try {
-                    const statusRes = await fetch(`${CONTROL_API_URL}/api/status`);
-                    if (statusRes.ok) {
-                        botStatuses = await statusRes.json();
-                    } else {
-                        fetchError = `API Error: ${statusRes.status}`;
-                    }
-                } catch (e) {
-                    console.warn("Control API unavailable", e);
-                    fetchError = `Connect Error: ${e.message}`;
-                }
-
                 let html = '';
-                if (fetchError) {
-                    html += `<div style="background:rgba(248,73,96,0.1); color:var(--red); padding:10px; border-radius:10px; margin-bottom:15px; font-size:12px;">⚠️ Status API: ${fetchError}</div>`;
-                }
 
                 results.forEach((data, i) => {
                     const acc = ACCOUNTS[i];
-                    html += createAccountHTML(data, acc, botStatuses ? botStatuses[acc.id] : null);
+                    html += createAccountHTML(data, acc);
                 });
 
                 document.getElementById('dashboard').innerHTML = html;
