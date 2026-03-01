@@ -277,9 +277,9 @@
 
         // API URL configuration
         let CONTROL_API_URL = localStorage.getItem('control_api_url') ||
-            (window.location.protocol.startsWith("http") && !window.location.hostname.includes("github.io")
+            (window.location.protocol.startsWith("http") && !window.location.hostname.includes("github.io") && !window.location.hostname.includes("localhost")
                 ? `${window.location.protocol}//${window.location.hostname}:5001`
-                : `http://localhost:5001`);
+                : `http://192.168.2.131:5001`);
 
         function setApiUrl() {
             const newUrl = prompt("Enter Control Center API URL (e.g. http://VPS_IP:5001)", CONTROL_API_URL);
@@ -456,14 +456,24 @@
 
                 // Fetch Bot status from our new API
                 let botStatuses = null;
+                let fetchError = null;
                 try {
                     const statusRes = await fetch(`${CONTROL_API_URL}/api/status`);
-                    botStatuses = await statusRes.json();
+                    if (statusRes.ok) {
+                        botStatuses = await statusRes.json();
+                    } else {
+                        fetchError = `API Error: ${statusRes.status}`;
+                    }
                 } catch (e) {
-                    console.warn("Control API unavailable");
+                    console.warn("Control API unavailable", e);
+                    fetchError = `Connect Error: ${e.message}`;
                 }
 
                 let html = '';
+                if (fetchError) {
+                    html += `<div style="background:rgba(248,73,96,0.1); color:var(--red); padding:10px; border-radius:10px; margin-bottom:15px; font-size:12px;">⚠️ Status API: ${fetchError}</div>`;
+                }
+
                 results.forEach((data, i) => {
                     const acc = ACCOUNTS[i];
                     html += createAccountHTML(data, acc, botStatuses ? botStatuses[acc.id] : null);
