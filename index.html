@@ -196,6 +196,66 @@
         .updating {
             animation: pulse 1s infinite;
         }
+
+        /* Control Panel Styles */
+        .control-panel {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bot-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .status-badge {
+            font-size: 10px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .status-running {
+            background: rgba(2, 192, 118, 0.2);
+            color: var(--green);
+        }
+
+        .status-stopped {
+            background: rgba(248, 73, 96, 0.2);
+            color: var(--red);
+        }
+
+        .btn {
+            border: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+            opacity: 0.8;
+        }
+
+        .btn-danger {
+            background: var(--red);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #ff5c75;
+        }
     </style>
 </head>
 
@@ -211,17 +271,53 @@
 
     <script>
         const ACCOUNTS = [
-            { name: "Main Account (key.json)", address: "0x82C23290b1797a32D1C4510C233f7d6F8E944896" },
-            { name: "Sub Account (key2.json)", address: "0xF18E7f6Ada8d2CbE8083206772b07f804A6A6d94" }
+            { id: "main", name: "Main Account (key.json)", address: "0x82C23290b1797a32D1C4510C233f7d6F8E944896" },
+            { id: "sub", name: "Sub Account (key2.json)", address: "0xF18E7f6Ada8d2CbE8083206772b07f804A6A6d94" }
         ];
 
+        // API URL configuration: Try current host first, fallback to localhost if file://
+        const hostName = window.location.hostname || "localhost";
+        const CONTROL_API_URL = window.location.protocol.startsWith("http")
+            ? `${window.location.protocol}//${hostName}:5001`
+            : `http://localhost:5001`;
+
         async function postData(url = '', data = {}) {
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            });
-            return response.json();
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                return response.json();
+            } catch (e) {
+                console.warn(`Fetch error for ${url}:`, e);
+                return null;
+            }
+        }
+
+        async function performAction(account, action) {
+            const warning = action === "stop_and_close" ? "\n⚠️ POSITIONS WILL BE CLOSED AND BOT WILL STOP." : "";
+            if (!confirm(`Really perform ${action} for ${account}?${warning}`)) return;
+
+            const btn = event.target;
+            const originalText = btn.innerText;
+            btn.innerText = "Executing...";
+            btn.disabled = true;
+
+            try {
+                const res = await postData(`${CONTROL_API_URL}/api/action`, { account, action });
+                if (res && res.success) {
+                    alert(res.message || "Action successful");
+                } else {
+                    alert("Error: " + (res?.error || "Unknown error"));
+                }
+            } catch (e) {
+                alert("Failed to connect to Control API.");
+            } finally {
+                btn.innerText = originalText;
+                btn.disabled = false;
+                updateDashboard();
+            }
         }
 
         async function fetchAccountData(address) {
@@ -249,7 +345,9 @@
             return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val);
         }
 
-        function createAccountHTML(data, name) {
+        function createAccountHTML(data, accountConfig, botStatus) {
+            const name = accountConfig.name;
+            const accountId = accountConfig.id;
             if (!data) return `<div class="account-card"><div class="account-name">${name}</div><div class="loading down">Error fetching data</div></div>`;
 
             const perp = data.perp;
@@ -298,6 +396,10 @@
                 });
             }
 
+            const isRunning = botStatus && botStatus.running;
+            const statusClass = isRunning ? "status-running" : "status-stopped";
+            const statusText = isRunning ? "Bot: Running" : "Bot: Stopped";
+
             return `
                 <div class="account-card">
                     <div class="account-name">${name}</div>
@@ -318,6 +420,13 @@
                     <div class="positions-list">
                         ${posHTML}
                     </div>
+
+                    <div class="control-panel">
+                        <div class="bot-info">
+                            <span class="status-badge ${statusClass}">${statusText}</span>
+                        </div>
+                        <button class="btn btn-danger" onclick="performAction('${accountId}', 'stop_and_close')">Stop & Close All</button>
+                    </div>
                 </div>
             `;
         }
@@ -327,11 +436,22 @@
             statusEl.classList.add('updating');
             statusEl.innerText = 'Updating...';
 
+            // Fetch HL data
             const results = await Promise.all(ACCOUNTS.map(acc => fetchAccountData(acc.address)));
+
+            // Fetch Bot status from our new API
+            let botStatuses = null;
+            try {
+                const statusRes = await fetch(`${CONTROL_API_URL}/api/status`);
+                botStatuses = await statusRes.json();
+            } catch (e) {
+                console.warn("Control API unavailable");
+            }
 
             let html = '';
             results.forEach((data, i) => {
-                html += createAccountHTML(data, ACCOUNTS[i].name);
+                const acc = ACCOUNTS[i];
+                html += createAccountHTML(data, acc, botStatuses ? botStatuses[acc.id] : null);
             });
 
             document.getElementById('dashboard').innerHTML = html;
