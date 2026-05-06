@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hyperliquid Monitor</title>
+    <title>Kings Engine | Unified</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0b0e11;
-            --card-bg: rgba(23, 28, 35, 0.8);
-            --text-color: #eaecef;
-            --secondary-text: #929aa5;
-            --accent-blue: #3861fb;
+            --bg-deep: #05070a;
+            --bg-gradient: linear-gradient(135deg, #05070a 0%, #0d1117 100%);
+            --card-bg: rgba(22, 27, 34, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent-cyan: #00f2ff;
             --accent-purple: #8a3ffc;
-            --green: #02c076;
-            --red: #f84960;
-            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-dim: #8b949e;
+            --green: #00ffa3;
+            --red: #ff3366;
+            --gold: #ffcc00;
         }
 
         * {
@@ -26,480 +28,396 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.5;
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
             padding: 16px;
-            padding-bottom: 40px;
+            overflow-x: hidden;
+        }
+
+        .glow-bg {
+            position: fixed;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(138, 63, 252, 0.15) 0%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
         }
 
         header {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
         }
 
-        h1 {
+        .brand h1 {
             font-size: 20px;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            background: linear-gradient(to right, var(--text-main), var(--accent-cyan));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .refresh-status {
-            font-size: 12px;
-            color: var(--secondary-text);
+        .brand p {
+            font-size: 9px;
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
-        .account-card {
+        .status-pill {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 9px;
+            color: var(--text-dim);
+            backdrop-filter: blur(5px);
+        }
+
+        .card {
             background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border: 1px solid var(--glass-border);
             border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 16px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .account-name {
-            font-size: 14px;
-            color: var(--secondary-text);
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
-
-        .account-name::before {
+        .card.main::before { background: linear-gradient(90deg, var(--gold), var(--accent-purple)); }
+        .card.sub::before { background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan)); }
+        
+        .card::before {
             content: "";
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background: var(--accent-blue);
-            border-radius: 50%;
-            margin-right: 8px;
-            box-shadow: 0 0 8px var(--accent-blue);
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 3px;
         }
 
-        .total-value {
-            font-size: 28px;
+        .acc-type {
+            font-size: 9px;
             font-weight: 700;
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+            display: block;
+        }
+
+        .equity {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .equity .currency {
+            font-size: 12px;
+            color: var(--text-dim);
+            font-weight: 400;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
             margin-bottom: 16px;
         }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .stat-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 12px;
+        .stat-box {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px;
             border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .stat-label {
-            font-size: 11px;
-            color: var(--secondary-text);
+            font-size: 9px;
+            color: var(--text-dim);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 4px;
+            margin-bottom: 1px;
         }
 
-        .stat-value {
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .positions-title {
+        .stat-box .val {
             font-size: 14px;
             font-weight: 600;
-            margin-bottom: 12px;
-            color: var(--text-color);
         }
 
-        .position-item {
+        .section-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 10px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 10px;
         }
 
-        .position-item:last-child {
-            border-bottom: none;
-        }
-
-        .pos-info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .pos-coin {
+        .section-header h2 {
+            font-size: 11px;
             font-weight: 600;
-            font-size: 15px;
-        }
-
-        .pos-size {
-            font-size: 12px;
-            color: var(--secondary-text);
-        }
-
-        .pos-pnl {
-            text-align: right;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .pnl-val {
-            font-weight: 700;
-            font-size: 15px;
-        }
-
-        .pnl-pct {
-            font-size: 12px;
-        }
-
-        .up {
-            color: var(--green);
-        }
-
-        .down {
-            color: var(--red);
-        }
-
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: var(--secondary-text);
-        }
-
-        @keyframes pulse {
-            0% {
-                opacity: 0.6;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0.6;
-            }
-        }
-
-        .updating {
-            animation: pulse 1s infinite;
-        }
-
-        /* Control Panel Styles */
-        .control-panel {
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid var(--glass-border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .bot-info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .status-badge {
-            font-size: 10px;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-weight: 700;
+            color: var(--text-dim);
             text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 4px;
         }
 
-        .status-running {
-            background: rgba(2, 192, 118, 0.2);
-            color: var(--green);
-        }
-
-        .status-stopped {
-            background: rgba(248, 73, 96, 0.2);
-            color: var(--red);
-        }
-
-        .btn {
-            border: none;
+        .pos-card {
+            background: rgba(255, 255, 255, 0.02);
             border-radius: 12px;
-            padding: 10px 16px;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .btn:active {
-            transform: scale(0.95);
-            opacity: 0.8;
+        .pos-card.long { border-left: 2px solid var(--green); }
+        .pos-card.short { border-left: 2px solid var(--red); }
+
+        .pos-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
         }
 
-        .btn-danger {
-            background: var(--red);
-            color: white;
+        .coin-meta { flex: 1; }
+        .coin-meta h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+        
+        .price-row {
+            display: flex;
+            gap: 6px;
+            font-size: 10px;
+            margin-bottom: 2px;
+            align-items: center;
+        }
+        
+        .p-label { color: var(--text-dim); }
+        .p-val { font-weight: 600; color: #e0e0e0; }
+        
+        .trail-active {
+            background: rgba(0, 242, 255, 0.05);
+            padding: 2px 4px;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 242, 255, 0.1);
+            margin-top: 4px;
         }
 
-        .btn-danger:hover {
-            background: #ff5c75;
+        .side-badge { font-size: 8px; padding: 1px 4px; border-radius: 3px; font-weight: 700; }
+        .side-long { background: rgba(0, 255, 163, 0.1); color: var(--green); }
+        .side-short { background: rgba(255, 51, 102, 0.1); color: var(--red); }
+
+        .pos-pnl { text-align: right; }
+        .pnl-amt { font-size: 16px; font-weight: 700; }
+        .pnl-pct { font-size: 11px; font-weight: 600; margin-top: 2px; }
+        .up { color: var(--green); }
+        .down { color: var(--red); }
+
+        /* Watchlist Area */
+        .watchlist {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed rgba(255,255,255,0.05);
+        }
+
+        .watch-item {
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            padding: 4px 8px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 10px;
+        }
+
+        .watch-name { font-weight: 700; color: var(--text-main); }
+        .watch-z { font-family: monospace; font-weight: 600; }
+        .watch-z.hot-long { color: var(--green); text-shadow: 0 0 5px var(--green); }
+        .watch-z.hot-short { color: var(--red); text-shadow: 0 0 5px var(--red); }
+        .trend-icon { font-size: 8px; }
+
+        .empty {
+            text-align: center;
+            padding: 15px;
+            color: var(--text-dim);
+            font-size: 11px;
+            font-style: italic;
         }
     </style>
 </head>
-
 <body>
+    <div class="glow-bg"></div>
+
     <header>
-        <h1>HL Monitor</h1>
-        <div id="status" class="refresh-status">Initializing...</div>
+        <div class="brand">
+            <h1>Kings Terminal</h1>
+            <p>Live Engine Status</p>
+        </div>
+        <div id="status" class="status-pill">Syncing...</div>
     </header>
 
     <div id="dashboard">
-        <div class="loading">Loading account data...</div>
+        <div style="text-align: center; padding: 80px; color: var(--text-dim);">Scanning Network...</div>
     </div>
 
     <script>
         const ACCOUNTS = [
-            { id: "sub", name: "Sub Account (key2.json)", address: "0xF18E7f6Ada8d2CbE8083206772b07f804A6A6d94" }
+            { id: "main", name: "Kings Unified Engine", address: "0x82C23290b1797a32D1C4510C233f7d6F8E944896", class: "main", port: 5001 }
         ];
 
-        // API URL configuration
-        let CONTROL_API_URL = localStorage.getItem('control_api_url') ||
-            (window.location.port === "5001"
-                ? `${window.location.protocol}//${window.location.hostname}:${window.location.port}`
-                : `${window.location.protocol}//${window.location.hostname}:5001`);
+        const FMV_IP = "150.95.215.147";
 
-        function setApiUrl() {
-            const newUrl = prompt("Enter Control Center API URL (e.g. http://VPS_IP:5001)", CONTROL_API_URL);
-            if (newUrl) {
-                CONTROL_API_URL = newUrl;
-                localStorage.setItem('control_api_url', newUrl);
-                updateDashboard();
-            }
-        }
-
-        async function postData(url = '', data = {}, timeout = 10000) {
-            const controller = new AbortController();
-            const id = setTimeout(() => controller.abort(), timeout);
+        async function postData(url, data) {
             try {
                 const response = await fetch(url, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data),
-                    signal: controller.signal
+                    body: JSON.stringify(data)
                 });
-                clearTimeout(id);
-                if (!response.ok) return null;
                 return await response.json();
-            } catch (e) {
-                clearTimeout(id);
-                console.warn(`Fetch error for ${url}:`, e);
-                return null;
-            }
+            } catch (e) { return null; }
         }
 
-        async function performAction(account, action) {
-            const warning = action === "stop_and_close" ? "\n⚠️ POSITIONS WILL BE CLOSED AND BOT WILL STOP." : "";
-            if (!confirm(`Really perform ${action} for ${account}?${warning}`)) return;
-
-            // パスコード入力
-            const passcode = prompt("Enter Emergency Passcode (4 digits):");
-            if (!passcode) return;
-
-            const btn = event.target;
-            const originalText = btn.innerText;
-            btn.innerText = "Executing...";
-            btn.disabled = true;
-
+        async function getData(url) {
             try {
-                // 1. Try Local API first
-                const res = await postData(`${CONTROL_API_URL}/api/action`, { account, action, passcode });
-                if (res && res.success) {
-                    alert(res.message || "Action successful (Local API)");
-                } else {
-                    // 2. Fallback to Discord Webhook
-                    const webhookUrl = localStorage.getItem('discord_webhook_url');
-                    if (!webhookUrl) {
-                        const newUrl = prompt("Local API failed. Enter Discord Webhook URL for Relay:");
-                        if (newUrl) {
-                            localStorage.setItem('discord_webhook_url', newUrl);
-                        } else {
-                            throw new Error("Local API failed and No Webhook URL provided.");
-                        }
-                    }
-
-                    const relayRes = await fetch(localStorage.getItem('discord_webhook_url'), {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            content: `!${action} ${account} ${passcode}`
-                        })
-                    });
-
-                    if (relayRes.ok) {
-                        alert("Emergency command sent via Discord Relay.");
-                    } else {
-                        throw new Error(`Relay failed: ${relayRes.status}`);
-                    }
-                }
-            } catch (e) {
-                alert("Action failed: " + e.message);
-            } finally {
-                btn.innerText = originalText;
-                btn.disabled = false;
-                updateDashboard();
-            }
-        }
-
-        async function fetchAccountData(address) {
-            try {
-                // Fetch Perp state
-                const perpData = await postData('https://api.hyperliquid.xyz/info', {
-                    type: "clearinghouseState",
-                    user: address
-                });
-
-                // Fetch Spot state
-                const spotData = await postData('https://api.hyperliquid.xyz/info', {
-                    type: "spotClearinghouseState",
-                    user: address
-                });
-
-                return { perp: perpData, spot: spotData, address };
-            } catch (error) {
-                console.error(`Error fetching ${address}:`, error);
-                return null;
-            }
-        }
-
-        function formatUSD(val) {
-            return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val);
-        }
-
-        function createAccountHTML(data, accountConfig, botStatus) {
-            const name = accountConfig.name;
-            const accountId = accountConfig.id;
-            if (!data || !data.perp) return `<div class="account-card"><div class="account-name">${name}</div><div class="loading down">Error fetching perp data</div></div>`;
-
-            const perp = data.perp;
-            const spot = data.spot;
-
-            const accountValue = parseFloat(perp.marginSummary?.accountValue || 0);
-
-            let spotUSDC = 0;
-            if (spot && spot.balances) {
-                const usdc = spot.balances.find(b => b.coin === 'USDC');
-                if (usdc) spotUSDC = parseFloat(usdc.total || 0);
-            }
-
-            const totalValue = Math.max(accountValue, spotUSDC);
-            const withdrawable = parseFloat(perp.withdrawable || 0);
-
-            const positions = (perp.assetPositions || []).filter(p => Math.abs(parseFloat(p.position.szi)) > 0.00001);
-
-            let posHTML = '';
-            if (positions.length === 0) {
-                posHTML = '<div class="secondary-text" style="font-size: 13px; color: #929aa5;">No active positions</div>';
-            } else {
-                positions.forEach(p => {
-                    const pos = p.position;
-                    const coin = pos.coin;
-                    const szi = parseFloat(pos.szi);
-                    const pnl = parseFloat(pos.unrealizedPnl || 0);
-
-                    const side = szi > 0 ? "LONG" : "SHORT";
-                    const pnlClass = pnl >= 0 ? "up" : "down";
-                    const pnlSign = pnl >= 0 ? "+" : "";
-
-                    posHTML += `
-                        <div class="position-item">
-                            <div class="pos-info">
-                                <span class="pos-coin">${coin} <span style="font-size: 10px; opacity: 0.6;">${side}</span></span>
-                                <span class="pos-size">${Math.abs(szi).toFixed(4)} </span>
-                            </div>
-                            <div class="pos-pnl">
-                                <span class="pnl-val ${pnlClass}">${pnlSign}${formatUSD(pnl)}</span>
-                            </div>
-                        </div>
-                    `;
-                });
-            }
-
-            return `
-                <div class="account-card">
-                    <div class="account-name">${name}</div>
-                    <div class="total-value">${formatUSD(totalValue)}</div>
-                    
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-label">Withdrawable</div>
-                            <div class="stat-value">${formatUSD(withdrawable)}</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-label">Spot USDC</div>
-                            <div class="stat-value">${formatUSD(spotUSDC)}</div>
-                        </div>
-                    </div>
-
-                    <div class="positions-title">Active Positions (${positions.length})</div>
-                    <div class="positions-list">
-                        ${posHTML}
-                    </div>
-
-                    <div class="control-panel">
-                        <div style="display: flex; gap: 8px;">
-                            <button class="btn btn-danger" onclick="performAction('${accountId}', 'stop_and_close')">Stop & Close All</button>
-                        </div>
-                    </div>
-                </div>
-            `;
+                const response = await fetch(url);
+                return await response.json();
+            } catch (e) { return null; }
         }
 
         async function updateDashboard() {
             const statusEl = document.getElementById('status');
-            statusEl.classList.add('updating');
-            statusEl.innerText = 'Updating...';
-
+            const dashboardEl = document.getElementById('dashboard');
+            
             try {
-                // Fetch HL data
-                const results = await Promise.all(ACCOUNTS.map(acc => fetchAccountData(acc.address)));
-
                 let html = '';
+                for (const acc of ACCOUNTS) {
+                    const [perp, perpXyz, spot, botStatus] = await Promise.all([
+                        postData('https://api.hyperliquid.xyz/info', { type: "clearinghouseState", user: acc.address }),
+                        postData('https://api.hyperliquid.xyz/info', { type: "clearinghouseState", user: acc.address, dex: "xyz" }),
+                        postData('https://api.hyperliquid.xyz/info', { type: "spotClearinghouseState", user: acc.address }),
+                        getData(`status_${acc.id}.json?t=${new Date().getTime()}`) // キャッシュ回避
+                    ]);
 
-                results.forEach((data, i) => {
-                    const acc = ACCOUNTS[i];
-                    html += createAccountHTML(data, acc);
-                });
+                    if (!perp && !perpXyz) continue;
 
-                document.getElementById('dashboard').innerHTML = html;
+                    const accountValue = parseFloat(perp?.marginSummary?.accountValue || 0);
+                    const usdc = (spot?.balances || []).find(b => b.coin === 'USDC');
+                    const spotUSDC = parseFloat(usdc?.total || 0);
+                    const totalEquity = Math.max(accountValue, spotUSDC);
+                    const marginUsed = parseFloat(perp?.marginSummary?.totalMarginUsed || 0) + 
+                                     parseFloat(perpXyz?.marginSummary?.totalMarginUsed || 0);
 
-                const now = new Date();
-                statusEl.innerText = `Updated: ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
+                    // Positions
+                    const allPositions = [...(perp?.assetPositions || []), ...(perpXyz?.assetPositions || [])]
+                        .map(p => p.position)
+                        .filter(p => Math.abs(parseFloat(p.szi)) > 0.0001);
+
+                    let posHTML = '';
+                    if (allPositions.length === 0) {
+                        posHTML = '<div class="empty">Scanning for Opportunities...</div>';
+                    } else {
+                            allPositions.forEach(pos => {
+                            const szi = parseFloat(pos.szi);
+                            const pnl = parseFloat(pos.unrealizedPnl || 0);
+                            const side = szi > 0 ? "LONG" : "SHORT";
+                            const pnlClass = pnl >= 0 ? "up" : "down";
+                            const coinRaw = pos.coin;
+                            const coin = pos.coin.replace('xyz:', '');
+                            
+                            // ボットのステータスから追加情報を取得
+                            const bPos = (botStatus?.active_positions || {})[coinRaw] || {};
+                            const entryP = bPos.entry_p || parseFloat(pos.entryPx || 0);
+                            const currP = bPos.curr_p || 0;
+                            const tpP = bPos.tp_p || 0;
+                            const trailExitP = bPos.trail_exit_p || 0;
+                            const hwm = bPos.hwm || 0;
+                            const tStart = bPos.trail_start || 0.3;
+
+                            posHTML += `
+                                <div class="pos-card ${szi > 0 ? 'long' : 'short'}">
+                                    <div class="pos-main">
+                                        <div class="coin-meta">
+                                            <h3>${coin} <span class="side-badge ${szi > 0 ? 'side-long' : 'side-short'}">${side}</span></h3>
+                                            <div class="price-row">
+                                                <span class="p-label">Entry:</span> <span class="p-val">$${entryP.toFixed(4)}</span>
+                                                ${currP ? `<span class="p-label">Now:</span> <span class="p-val">$${currP.toFixed(4)}</span>` : ''}
+                                            </div>
+                                            <div class="price-row">
+                                                <span class="p-label">Target:</span> <span class="p-val" style="color:var(--accent-cyan)">$${tpP.toFixed(4)}</span>
+                                                <span class="p-label" style="margin-left:10px">Stop:</span> <span class="p-val" style="color:var(--red)">$${(bPos.sl_p || 0).toFixed(4)}</span>
+                                            </div>
+                                            ${hwm >= tStart ? `
+                                                <div class="price-row trail-active" style="background: rgba(0, 242, 255, 0.05); padding: 2px 6px; border-radius: 4px; margin-top: 4px;">
+                                                    <span class="p-label">🛡️ Trail Exit:</span> <span class="p-val">$${trailExitP.toFixed(4)}</span>
+                                                </div>
+                                            ` : ''}
+                                        </div>
+                                        <div class="pos-pnl">
+                                            <div class="pnl-amt ${pnlClass}">${pnl >= 0 ? '+' : ''}${pnl.toFixed(2)}</div>
+                                            <div class="pnl-pct ${pnlClass}">${bPos.roe ? bPos.roe.toFixed(2) : '0.00'}%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        });
+                    }
+
+                    // Watchlist & Z-Scores
+                    let watchHTML = '';
+                    if (botStatus && botStatus.z_scores) {
+                        const sortedAssets = Object.keys(botStatus.z_scores).sort();
+                        sortedAssets.forEach(asset => {
+                            const data = botStatus.z_scores[asset];
+                            const z = data.val;
+                            const t1h = data.trend_1h === "UP" ? "▲" : "▼";
+                            const t4h = data.trend_4h === "UP" ? "▲" : "▼";
+                            const hotClass = z >= 2.0 ? 'hot-short' : (z <= -2.0 ? 'hot-long' : '');
+                            const name = asset.replace('xyz:', '');
+                            
+                            watchHTML += `
+                                <div class="watch-item">
+                                    <span class="watch-name">${name}</span>
+                                    <span class="watch-z ${hotClass}">${z >= 0 ? '+' : ''}${z.toFixed(1)}</span>
+                                    <span class="trend-icon" style="color:${data.trend_1h==='UP'?'var(--green)':'var(--red)'}">${t1h}</span>
+                                    <span class="trend-icon" style="color:${data.trend_4h==='UP'?'var(--green)':'var(--red)'}">${t4h}</span>
+                                </div>
+                            `;
+                        });
+                    }
+
+                    html += `
+                        <div class="card ${acc.class}">
+                            <span class="acc-type">${acc.name}</span>
+                            <div class="equity">${totalEquity.toFixed(2)} <span class="currency">USDC</span></div>
+                            <div class="grid">
+                                <div class="stat-box"><div class="stat-label">Daily PnL</div><div class="val ${botStatus?.daily_stats?.pnl_usdc >= 0 ? 'up' : 'down'}">$${(botStatus?.daily_stats?.pnl_usdc || 0).toFixed(2)}</div></div>
+                                <div class="stat-box"><div class="stat-label">Margin Used</div><div class="val">${marginUsed.toFixed(1)}</div></div>
+                            </div>
+                            <div class="section-header"><h2>Live Positions (${allPositions.length})</h2></div>
+                            <div class="pos-list">${posHTML}</div>
+                            <div class="section-header"><h2>Kings Watchlist & Z-Scores</h2></div>
+                            <div class="watchlist">${watchHTML || '<div class="empty">Waiting for Bot Sync...</div>'}</div>
+                        </div>
+                    `;
+                }
+
+                dashboardEl.innerHTML = html;
+                statusEl.innerText = `Live Sync: ${new Date().toLocaleTimeString()}`;
             } catch (err) {
-                console.error("Dashboard update failed:", err);
-                statusEl.innerText = 'Update Failed';
-            } finally {
-                statusEl.classList.remove('updating');
+                statusEl.innerText = "Connection Refused";
             }
         }
 
-        // Initial load
+        setInterval(updateDashboard, 15000);
         updateDashboard();
-
-        // Refresh every 30 seconds
-        setInterval(updateDashboard, 30000);
     </script>
 </body>
-
 </html>

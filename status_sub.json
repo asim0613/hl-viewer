@@ -1,0 +1,49 @@
+{
+    "bot_id": "CRYPTO_AGGRESSIVE_MASTER",
+    "equity": 29.47,
+    "z_scores": {
+        "BTC": {
+            "val": 1.05,
+            "atr": 32.7857,
+            "trend_1h": "UP",
+            "trend_4h": "DOWN",
+            "updated_at": "12:12:21"
+        },
+        "ETH": {
+            "val": -0.1,
+            "atr": 1.2357,
+            "trend_1h": "UP",
+            "trend_4h": "DOWN",
+            "updated_at": "12:12:22"
+        }
+    },
+    "active_positions": {
+        "BTC": {
+            "side": 1,
+            "entry_p": 81456.0,
+            "size": 0.001,
+            "unrealizedPnl": -0.1,
+            "roe": -0.76,
+            "tp_roe": 4.2,
+            "tp_p": 82026.192,
+            "hwm": 0,
+            "trail_start": 0.3,
+            "trail_exit_p": 81293.088,
+            "curr_p": 81353.5,
+            "target_lev": 6.0
+        }
+    },
+    "daily_stats": {
+        "pnl_usdc": 1.8914760000000002,
+        "weekly_pnl": -4.605359000000001,
+        "wins": 4,
+        "losses": 0,
+        "asset_pnl": {
+            "ETH": 0.34355900000000006,
+            "BTC": 1.547917
+        },
+        "date": "2026-05-06"
+    },
+    "max_slots": 2,
+    "timestamp": "2026-05-06T12:12:22.771559"
+}

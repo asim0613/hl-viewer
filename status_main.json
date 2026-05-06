@@ -1,0 +1,101 @@
+{
+    "bot_id": "HL_INTEGRATED_MASTER",
+    "equity": 55.95,
+    "z_scores": {
+        "BTC": {
+            "val": 0.82,
+            "atr": 56.9286,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "18:47:36"
+        },
+        "ETH": {
+            "val": 2.01,
+            "atr": 4.3357,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "18:47:37"
+        },
+        "xyz:NATGAS": {
+            "val": -0.24,
+            "atr": 0.0034,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "18:47:37"
+        },
+        "xyz:AMD": {
+            "val": 0.71,
+            "atr": 0.905,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "18:47:38"
+        },
+        "xyz:NVDA": {
+            "val": 1.66,
+            "atr": 0.14,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "18:47:38"
+        },
+        "xyz:TSM": {
+            "val": 1.32,
+            "atr": 0.0993,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "18:47:38"
+        },
+        "xyz:SILVER": {
+            "val": 1.26,
+            "atr": 0.0568,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "18:47:39"
+        },
+        "xyz:COIN": {
+            "val": 1.24,
+            "atr": 0.105,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "18:47:39"
+        }
+    },
+    "active_positions": {
+        "xyz:NVDA": {
+            "side": -1,
+            "entry_p": 196.59,
+            "size": 0.333,
+            "unrealizedPnl": -1.14,
+            "roe": -34.95,
+            "tp_roe": 14.0,
+            "tp_p": 195.21387,
+            "sl_p": 202.4877,
+            "sl_roe": -60.0,
+            "hwm": 0.08,
+            "trail_start": 0.3,
+            "trail_exit_p": 196.83318,
+            "curr_p": 200.025,
+            "target_lev": 20.0
+        }
+    },
+    "daily_stats": {
+        "pnl_usdc": 2.630306,
+        "weekly_pnl": 5.238569000000001,
+        "wins": 14,
+        "losses": 6,
+        "asset_pnl": {
+            "AMD": 2.6682430000000004,
+            "ETH": 0.636516,
+            "BTC": -0.02413,
+            "NATGAS": 1.650633,
+            "TSM": -0.3165920000000001,
+            "SILVER": 0.239124,
+            "COIN": -0.9257869999999999,
+            "NVDA": 0.45963200000000004,
+            "PLTR": -1.773675,
+            "META": 0.016342
+        },
+        "date": "2026-05-06"
+    },
+    "max_slots": 4,
+    "timestamp": "2026-05-06T18:47:40.027278"
+}
