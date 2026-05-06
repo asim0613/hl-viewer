@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 56.01,
+    "equity": 56.3,
     "z_scores": {
         "BTC": {
-            "val": -0.81,
-            "atr": 36.3571,
+            "val": -0.3,
+            "atr": 38.7143,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:43:16"
+            "updated_at": "21:48:21"
         },
         "ETH": {
-            "val": -0.99,
-            "atr": 1.0857,
+            "val": -0.37,
+            "atr": 1.1286,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:43:16"
+            "updated_at": "21:48:22"
         },
         "xyz:NATGAS": {
-            "val": 1.42,
-            "atr": 0.004,
+            "val": 1.13,
+            "atr": 0.0042,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "21:43:16"
+            "updated_at": "21:48:22"
         },
         "xyz:AMD": {
-            "val": -2.09,
-            "atr": 1.1536,
+            "val": -1.54,
+            "atr": 1.26,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:43:17"
+            "updated_at": "21:48:22"
         },
         "xyz:NVDA": {
-            "val": -1.39,
-            "atr": 0.1307,
+            "val": -1.18,
+            "atr": 0.1379,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:43:17"
+            "updated_at": "21:48:23"
         },
         "xyz:TSM": {
-            "val": -1.66,
-            "atr": 0.1264,
+            "val": -1.09,
+            "atr": 0.1286,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:43:17"
+            "updated_at": "21:48:23"
         },
         "xyz:SILVER": {
-            "val": -0.86,
-            "atr": 0.0892,
+            "val": -0.52,
+            "atr": 0.0789,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:43:18"
+            "updated_at": "21:48:23"
         },
         "xyz:COIN": {
-            "val": -1.74,
-            "atr": 0.1629,
+            "val": -1.75,
+            "atr": 0.3114,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:43:18"
+            "updated_at": "21:48:24"
         }
     },
     "active_positions": {
@@ -66,14 +66,14 @@
             "size": 0.646,
             "tp_p": 201.8028,
             "sl_p": 194.388,
-            "unrealizedPnl": 0.06,
-            "roe": 0.47,
+            "unrealizedPnl": 0.1,
+            "roe": 0.75,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.18,
             "trail_start": 0.3,
             "trail_exit_p": 200.3692,
-            "curr_p": 200.495,
+            "curr_p": 200.55,
             "target_lev": 10.0
         },
         "xyz:SILVER": {
@@ -82,27 +82,27 @@
             "size": 1.72,
             "tp_p": 77.1503,
             "sl_p": 74.31558,
-            "unrealizedPnl": 0.32,
-            "roe": 2.42,
+            "unrealizedPnl": 0.58,
+            "roe": 4.39,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
-            "hwm": 0.36,
+            "hwm": 0.45,
             "trail_start": 0.3,
-            "trail_exit_p": 76.73727,
-            "curr_p": 76.7995,
+            "trail_exit_p": 76.80227,
+            "curr_p": 76.94999999999999,
             "target_lev": 10.0
         }
     },
     "daily_stats": {
-        "pnl_usdc": 1.0765570000000004,
-        "weekly_pnl": 3.68482,
-        "wins": 15,
+        "pnl_usdc": 1.275638,
+        "weekly_pnl": 3.8839010000000003,
+        "wins": 16,
         "losses": 7,
         "asset_pnl": {
+            "ETH": 0.8355969999999999,
             "COIN": -0.8520300000000001,
             "NVDA": -1.1678739999999999,
             "AMD": 2.6682430000000004,
-            "ETH": 0.636516,
             "BTC": -0.02413,
             "NATGAS": 1.650633,
             "TSM": -0.3165920000000001,
@@ -113,5 +113,5 @@
         "date": "2026-05-06"
     },
     "max_slots": 4,
-    "timestamp": "2026-05-06T21:43:19.439609"
+    "timestamp": "2026-05-06T21:48:24.474382"
 }
