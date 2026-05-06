@@ -1,95 +1,77 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 56.0,
+    "equity": 55.34,
     "z_scores": {
         "BTC": {
-            "val": -2.2,
-            "atr": 60.4286,
+            "val": -2.3,
+            "atr": 83.6429,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "23:04:06"
+            "updated_at": "23:09:07"
         },
         "ETH": {
-            "val": -1.84,
-            "atr": 2.2857,
+            "val": -2.05,
+            "atr": 3.7214,
             "trend_1h": "DOWN",
-            "trend_4h": "UP",
-            "updated_at": "23:04:07"
+            "trend_4h": "DOWN",
+            "updated_at": "23:09:08"
         },
         "xyz:NATGAS": {
-            "val": -1.5,
-            "atr": 0.0033,
+            "val": -0.85,
+            "atr": 0.0036,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:04:07"
+            "updated_at": "23:09:08"
         },
         "xyz:AMD": {
-            "val": -0.34,
-            "atr": 2.2536,
+            "val": 0.15,
+            "atr": 2.245,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:04:08"
+            "updated_at": "23:09:08"
         },
         "xyz:NVDA": {
-            "val": 1.92,
-            "atr": 0.6543,
+            "val": 2.27,
+            "atr": 0.5479,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "23:04:08"
+            "updated_at": "23:09:09"
         },
         "xyz:TSM": {
-            "val": 1.87,
-            "atr": 0.8179,
+            "val": 1.56,
+            "atr": 0.9814,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:04:08"
+            "updated_at": "23:09:09"
         },
         "xyz:SILVER": {
-            "val": 1.65,
-            "atr": 0.0957,
+            "val": 1.18,
+            "atr": 0.1138,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "23:04:09"
+            "updated_at": "23:09:10"
         },
         "xyz:COIN": {
-            "val": -1.98,
-            "atr": 0.5607,
+            "val": -1.94,
+            "atr": 0.4957,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:04:09"
+            "updated_at": "23:09:10"
         }
     },
-    "active_positions": {
-        "BTC": {
-            "side": 1,
-            "entry_p": 82042.0,
-            "size": 0.00161,
-            "entry_time": 1778072529.5003967,
-            "tp_p": 82616.294,
-            "sl_p": 81221.58,
-            "unrealizedPnl": -0.87,
-            "roe": -6.6,
-            "tp_roe": 7.0,
-            "sl_roe": -10.0,
-            "hwm": 0.17,
-            "trail_start": 0.3,
-            "trail_exit_p": 82019.416,
-            "curr_p": 81500.5,
-            "target_lev": 10.0
-        }
-    },
+    "active_positions": {},
     "daily_stats": {
-        "pnl_usdc": 2.5809480000000002,
-        "weekly_pnl": 5.189211000000001,
+        "pnl_usdc": 1.052982,
+        "weekly_pnl": 3.6612449999999996,
         "wins": 19,
-        "losses": 7,
+        "losses": 8,
         "asset_pnl": {
+            "BTC": -1.5520960000000001,
             "AMD": 3.585178,
             "NVDA": -0.9658969999999998,
             "SILVER": 0.425522,
             "ETH": 0.8355969999999999,
             "COIN": -0.8520300000000001,
-            "BTC": -0.02413,
             "NATGAS": 1.650633,
             "TSM": -0.3165920000000001,
             "PLTR": -1.773675,
@@ -98,5 +80,5 @@
         "date": "2026-05-06"
     },
     "max_slots": 4,
-    "timestamp": "2026-05-06T23:04:10.327165"
+    "timestamp": "2026-05-06T23:09:10.853654"
 }
