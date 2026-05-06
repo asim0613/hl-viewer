@@ -399,6 +399,7 @@
                             <div class="equity">${totalEquity.toFixed(2)} <span class="currency">USDC</span></div>
                             <div class="grid">
                                 <div class="stat-box"><div class="stat-label">Daily PnL</div><div class="val ${botStatus?.daily_stats?.pnl_usdc >= 0 ? 'up' : 'down'}">$${(botStatus?.daily_stats?.pnl_usdc || 0).toFixed(2)}</div></div>
+                                <div class="stat-box"><div class="stat-label">7D PnL</div><div class="val ${botStatus?.daily_stats?.weekly_pnl >= 0 ? 'up' : 'down'}">$${(botStatus?.daily_stats?.weekly_pnl || 0).toFixed(2)}</div></div>
                                 <div class="stat-box"><div class="stat-label">Margin Used</div><div class="val">${marginUsed.toFixed(1)}</div></div>
                             </div>
                             <div class="section-header"><h2>Live Positions (${allPositions.length})</h2></div>
