@@ -1,76 +1,76 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 56.6,
+    "equity": 55.83,
     "z_scores": {
         "BTC": {
-            "val": -2.17,
-            "atr": 23.3571,
+            "val": -2.48,
+            "atr": 22.8571,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "05:58:24"
+            "updated_at": "05:59:21"
         },
         "ETH": {
-            "val": -1.58,
-            "atr": 0.7286,
+            "val": -1.69,
+            "atr": 0.7214,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "05:58:24"
+            "updated_at": "05:59:22"
         },
         "xyz:AMD": {
-            "val": -0.42,
-            "atr": 0.1493,
+            "val": -0.22,
+            "atr": 0.145,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "05:58:25"
+            "updated_at": "05:59:23"
         },
         "xyz:SILVER": {
-            "val": -2.19,
-            "atr": 0.1238,
+            "val": -2.58,
+            "atr": 0.1311,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "05:58:25"
+            "updated_at": "05:59:23"
         },
         "UNI": {
             "val": -1.75,
             "atr": 0.0014,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "05:58:26"
+            "updated_at": "05:59:25"
         },
         "AVAX": {
-            "val": -1.91,
-            "atr": 0.0037,
+            "val": -2.22,
+            "atr": 0.0036,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "05:58:27"
+            "updated_at": "05:59:25"
         },
         "xyz:HOOD": {
-            "val": 0.37,
-            "atr": 0.0216,
+            "val": 0.33,
+            "atr": 0.0224,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "05:58:24"
+            "updated_at": "05:59:22"
         },
         "xyz:BRENTOIL": {
-            "val": 1.73,
-            "atr": 0.2257,
+            "val": 2.0,
+            "atr": 0.2171,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "05:58:25"
+            "updated_at": "05:59:22"
         },
         "xyz:MSFT": {
-            "val": -1.79,
-            "atr": 0.11,
+            "val": -2.12,
+            "atr": 0.1236,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "05:58:26"
+            "updated_at": "05:59:24"
         },
         "xyz:PLATINUM": {
-            "val": -1.69,
-            "atr": 1.2571,
+            "val": -2.17,
+            "atr": 1.2643,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "05:58:26"
+            "updated_at": "05:59:24"
         }
     },
     "active_positions": {
@@ -81,14 +81,14 @@
             "entry_time": 1778176667.5827897,
             "tp_p": 78865.01,
             "sl_p": 82067.65,
-            "unrealizedPnl": 0.35,
-            "roe": 2.6,
+            "unrealizedPnl": 0.41,
+            "roe": 3.08,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
-            "hwm": 0.27,
+            "hwm": 0.31,
             "trail_start": 0.75,
-            "trail_exit_p": 80090.698,
-            "curr_p": 79857.5,
+            "trail_exit_p": 80058.698,
+            "curr_p": 79819.5,
             "target_lev": 10.0
         },
         "ETH": {
@@ -98,28 +98,28 @@
             "entry_time": 1778176892.0379326,
             "tp_p": 2267.06615,
             "sl_p": 2359.12975,
-            "unrealizedPnl": 0.75,
-            "roe": 5.49,
+            "unrealizedPnl": 0.77,
+            "roe": 5.67,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.58,
             "trail_start": 0.75,
             "trail_exit_p": 2295.05477,
-            "curr_p": 2288.95,
+            "curr_p": 2288.55,
             "target_lev": 10.0
         }
     },
     "daily_stats": {
-        "pnl_usdc": -0.4784220000000001,
-        "weekly_pnl": 5.194944000000002,
+        "pnl_usdc": -3.9683660000000014,
+        "weekly_pnl": 1.7049999999999996,
         "wins": 2,
-        "losses": 1,
+        "losses": 2,
         "asset_pnl": {
+            "SILVER": -3.5015780000000003,
             "NATGAS": -1.701543,
             "ETH": -0.058761,
             "BTC": -0.057762,
             "UNI": 0.838419,
-            "SILVER": -0.011634,
             "TSM": 0.5128590000000001
         },
         "date": "2026-05-08",
@@ -129,5 +129,5 @@
         }
     },
     "max_slots": 4,
-    "timestamp": "2026-05-08T05:58:27.439090"
+    "timestamp": "2026-05-08T05:59:25.565655"
 }
