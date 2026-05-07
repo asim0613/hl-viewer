@@ -1,1 +1,124 @@
-/home/junji/bot/status_main.json
+{
+    "bot_id": "HL_INTEGRATED_MASTER",
+    "equity": 56.08,
+    "z_scores": {
+        "BTC": {
+            "val": -0.83,
+            "atr": 54.4286,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "00:43:26"
+        },
+        "ETH": {
+            "val": -0.5,
+            "atr": 1.8857,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "00:43:27"
+        },
+        "xyz:NATGAS": {
+            "val": 0.92,
+            "atr": 0.0038,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "00:43:27"
+        },
+        "xyz:AMD": {
+            "val": -1.27,
+            "atr": 0.765,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "00:43:28"
+        },
+        "xyz:NVDA": {
+            "val": 1.02,
+            "atr": 0.2929,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "00:43:28"
+        },
+        "xyz:TSM": {
+            "val": 2.26,
+            "atr": 0.3579,
+            "trend_1h": "UP",
+            "trend_4h": "DOWN",
+            "updated_at": "00:43:28"
+        },
+        "xyz:SILVER": {
+            "val": -1.76,
+            "atr": 0.0911,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "00:43:29"
+        },
+        "xyz:COIN": {
+            "val": -0.48,
+            "atr": 0.2593,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "00:43:29"
+        },
+        "UNI": {
+            "val": -0.44,
+            "atr": 0.0036,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "00:43:30"
+        },
+        "AVAX": {
+            "val": -0.54,
+            "atr": 0.008,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "00:43:30"
+        }
+    },
+    "active_positions": {
+        "xyz:NATGAS": {
+            "side": -1,
+            "entry_p": 2.7922,
+            "size": 49.4,
+            "tp_p": 2.77265,
+            "sl_p": 2.87597,
+            "unrealizedPnl": -1.99,
+            "roe": -14.45,
+            "tp_roe": 7.0,
+            "sl_roe": -30.0,
+            "hwm": 0.23,
+            "trail_start": 0.35,
+            "trail_exit_p": 2.78966,
+            "curr_p": 2.83255,
+            "target_lev": 10.0
+        },
+        "xyz:TSM": {
+            "side": -1,
+            "entry_p": 419.31,
+            "size": 0.321,
+            "entry_time": 1778168382.798076,
+            "tp_p": 416.37483,
+            "sl_p": 431.8893,
+            "unrealizedPnl": -0.08,
+            "roe": -0.56,
+            "tp_roe": 7.0,
+            "sl_roe": -30.0,
+            "hwm": 0.13,
+            "trail_start": 0.35,
+            "trail_exit_p": 419.34203,
+            "curr_p": 419.54499999999996,
+            "target_lev": 10.0
+        }
+    },
+    "daily_stats": {
+        "pnl_usdc": -0.011629,
+        "weekly_pnl": 5.661737000000003,
+        "wins": 0,
+        "losses": 0,
+        "asset_pnl": {
+            "TSM": -0.011629
+        },
+        "date": "2026-05-08",
+        "asset_losses": {}
+    },
+    "max_slots": 4,
+    "timestamp": "2026-05-08T00:43:31.622809"
+}
