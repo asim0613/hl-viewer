@@ -1,76 +1,76 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 61.55,
+    "equity": 61.91,
     "z_scores": {
         "BTC": {
-            "val": 0.36,
-            "atr": 46.0,
+            "val": 0.98,
+            "atr": 45.5,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "02:18:59"
+            "updated_at": "02:20:12"
         },
         "ETH": {
-            "val": 1.9,
-            "atr": 1.45,
+            "val": 1.99,
+            "atr": 1.1714,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "02:18:59"
+            "updated_at": "02:20:12"
         },
         "SUI": {
-            "val": 0.9,
+            "val": 1.6,
             "atr": 0.0013,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "02:19:00"
+            "updated_at": "02:20:12"
         },
         "STX": {
-            "val": 0.87,
+            "val": 0.97,
             "atr": 0.0002,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "02:19:00"
+            "updated_at": "02:20:13"
         },
         "xyz:HOOD": {
-            "val": 1.0,
-            "atr": 0.0648,
+            "val": 2.38,
+            "atr": 0.0729,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "02:19:00"
+            "updated_at": "02:20:13"
         },
         "xyz:BRENTOIL": {
-            "val": -1.68,
-            "atr": 0.0857,
+            "val": -1.25,
+            "atr": 0.0864,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "02:19:01"
+            "updated_at": "02:20:13"
         },
         "xyz:AMD": {
-            "val": 0.8,
-            "atr": 0.7171,
+            "val": 0.69,
+            "atr": 0.6164,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "02:19:01"
+            "updated_at": "02:20:14"
         },
         "xyz:COIN": {
-            "val": 0.96,
-            "atr": 0.2107,
+            "val": 1.49,
+            "atr": 0.235,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "02:19:02"
+            "updated_at": "02:20:14"
         },
         "xyz:SILVER": {
-            "val": 0.42,
-            "atr": 0.0481,
+            "val": 0.6,
+            "atr": 0.047,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "02:19:02"
+            "updated_at": "02:20:14"
         },
         "xyz:MSFT": {
-            "val": 1.25,
-            "atr": 0.1614,
+            "val": 2.07,
+            "atr": 0.1821,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "02:19:02"
+            "updated_at": "02:20:15"
         }
     },
     "active_positions": {
@@ -85,14 +85,14 @@
             "entry_time": 1778244619.227647,
             "tp_p": 81269.02,
             "sl_p": 78066.3,
-            "unrealizedPnl": -0.3,
-            "roe": -2.05,
+            "unrealizedPnl": -0.16,
+            "roe": -1.14,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.37,
             "trail_start": 0.75,
             "trail_exit_p": 80121.296,
-            "curr_p": 79903.5,
+            "curr_p": 79976.5,
             "target_lev": 10.0
         },
         "xyz:BRENTOIL": {
@@ -106,14 +106,14 @@
             "entry_time": 1778249430.692759,
             "tp_p": 98.89188,
             "sl_p": 101.58078,
-            "unrealizedPnl": -0.2,
-            "roe": -1.4,
+            "unrealizedPnl": -0.32,
+            "roe": -2.27,
             "tp_roe": 7.0,
             "sl_roe": -20.0,
             "hwm": 0.02,
             "trail_start": 0.35,
             "trail_exit_p": 99.70942,
-            "curr_p": 99.7285,
+            "curr_p": 99.8155,
             "target_lev": 10.0
         }
     },
@@ -130,5 +130,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-09T02:19:03.024230"
+    "timestamp": "2026-05-09T02:20:15.599059"
 }
