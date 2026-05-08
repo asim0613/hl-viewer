@@ -1,76 +1,76 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 62.3,
+    "equity": 62.0,
     "z_scores": {
         "BTC": {
-            "val": -0.83,
-            "atr": 41.9286,
+            "val": -0.46,
+            "atr": 45.4286,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "04:06:31"
+            "updated_at": "04:07:43"
         },
         "ETH": {
-            "val": 0.41,
-            "atr": 1.5571,
+            "val": 0.96,
+            "atr": 1.7857,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "04:06:32"
+            "updated_at": "04:07:44"
         },
         "xyz:HOOD": {
-            "val": -0.06,
-            "atr": 0.0796,
+            "val": 0.12,
+            "atr": 0.0757,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "04:06:34"
+            "updated_at": "04:07:46"
         },
         "xyz:AMD": {
-            "val": 1.44,
-            "atr": 0.9171,
+            "val": 1.21,
+            "atr": 0.8936,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "04:06:33"
+            "updated_at": "04:07:45"
         },
         "xyz:MSFT": {
-            "val": -1.62,
-            "atr": 0.1086,
+            "val": -1.28,
+            "atr": 0.1207,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:06:33"
+            "updated_at": "04:07:45"
         },
         "xyz:PLATINUM": {
-            "val": 0.5,
-            "atr": 0.5214,
+            "val": 0.64,
+            "atr": 0.5643,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "04:06:32"
+            "updated_at": "04:07:44"
         },
         "xyz:NATGAS": {
-            "val": 0.16,
-            "atr": 0.0014,
+            "val": -0.16,
+            "atr": 0.0015,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:06:32"
+            "updated_at": "04:07:44"
         },
         "xyz:TSM": {
-            "val": 0.96,
-            "atr": 0.235,
+            "val": 1.17,
+            "atr": 0.2464,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:06:33"
+            "updated_at": "04:07:45"
         },
         "AAVE": {
-            "val": 0.64,
-            "atr": 0.1237,
+            "val": 0.85,
+            "atr": 0.1275,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "04:06:34"
+            "updated_at": "04:07:46"
         },
         "DYDX": {
-            "val": 1.05,
+            "val": 0.73,
             "atr": 0.0003,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "04:06:35"
+            "updated_at": "04:07:46"
         }
     },
     "active_positions": {
@@ -85,14 +85,14 @@
             "entry_time": 1778244619.227647,
             "tp_p": 81269.02,
             "sl_p": 78066.3,
-            "unrealizedPnl": -0.15,
-            "roe": -1.06,
+            "unrealizedPnl": -0.06,
+            "roe": -0.42,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.37,
             "trail_start": 0.75,
             "trail_exit_p": 80121.296,
-            "curr_p": 79983.5,
+            "curr_p": 80034.5,
             "target_lev": 10.0
         },
         "xyz:HOOD": {
@@ -106,14 +106,14 @@
             "entry_time": 1778260842.439268,
             "tp_p": 75.1989,
             "sl_p": 78.00087,
-            "unrealizedPnl": -0.97,
-            "roe": -6.63,
+            "unrealizedPnl": -1.11,
+            "roe": -7.55,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.03,
             "trail_start": 0.35,
             "trail_exit_p": 75.80902,
-            "curr_p": 76.231,
+            "curr_p": 76.301,
             "target_lev": 10.0
         }
     },
@@ -132,5 +132,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-09T04:06:35.235309"
+    "timestamp": "2026-05-09T04:07:47.287976"
 }
