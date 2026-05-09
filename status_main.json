@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 62.18,
+    "equity": 62.22,
     "z_scores": {
         "BTC": {
-            "val": -1.42,
-            "atr": 17.1429,
+            "val": -0.82,
+            "atr": 19.5,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:47:54"
+            "updated_at": "16:53:00"
         },
         "ETH": {
-            "val": -0.77,
-            "atr": 0.5214,
+            "val": -0.16,
+            "atr": 0.4857,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:47:55"
+            "updated_at": "16:53:01"
         },
         "xyz:AMD": {
-            "val": -0.52,
-            "atr": 0.26,
+            "val": 2.38,
+            "atr": 0.2514,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:47:55"
+            "updated_at": "16:53:01"
         },
         "xyz:COST": {
             "val": -1.72,
             "atr": 0.8214,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "16:47:56"
+            "updated_at": "16:53:02"
         },
         "xyz:COIN": {
-            "val": -1.09,
-            "atr": 0.0136,
+            "val": -0.72,
+            "atr": 0.0221,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:47:56"
+            "updated_at": "16:53:02"
         },
         "xyz:PLATINUM": {
-            "val": 1.98,
-            "atr": 0.0857,
+            "val": -2.01,
+            "atr": 0.2071,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "16:47:56"
+            "updated_at": "16:53:02"
         },
         "ACE": {
-            "val": 2.32,
+            "val": 0.95,
             "atr": 0.0003,
             "trend_1h": "UP",
-            "trend_4h": "DOWN",
-            "updated_at": "16:47:57"
+            "trend_4h": "UP",
+            "updated_at": "16:53:03"
         },
         "GALA": {
-            "val": -1.33,
+            "val": -1.17,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "16:47:57"
+            "updated_at": "16:53:03"
         }
     },
     "active_positions": {
@@ -71,14 +71,14 @@
             "entry_time": 1778244619.227647,
             "tp_p": 81269.02,
             "sl_p": 78066.3,
-            "unrealizedPnl": 0.12,
-            "roe": 0.86,
+            "unrealizedPnl": 0.2,
+            "roe": 1.39,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.66,
             "trail_start": 0.75,
             "trail_exit_p": 80359.296,
-            "curr_p": 80136.5,
+            "curr_p": 80179.5,
             "target_lev": 10.0
         },
         "xyz:COIN": {
@@ -92,14 +92,14 @@
             "entry_time": 1778299161.617061,
             "tp_p": 202.7665,
             "sl_p": 195.31629,
-            "unrealizedPnl": -0.13,
-            "roe": -2.22,
+            "unrealizedPnl": -0.12,
+            "roe": -2.07,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.25,
             "trail_start": 0.35,
             "trail_exit_p": 201.5781,
-            "curr_p": 200.91,
+            "curr_p": 200.94,
             "target_lev": 10.0
         },
         "xyz:AMD": {
@@ -113,14 +113,14 @@
             "entry_time": 1778299523.3906856,
             "tp_p": 464.50896,
             "sl_p": 447.4416,
-            "unrealizedPnl": -0.12,
-            "roe": -2.01,
+            "unrealizedPnl": -0.08,
+            "roe": -1.26,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.03,
             "trail_start": 0.35,
             "trail_exit_p": 460.76921,
-            "curr_p": 460.355,
+            "curr_p": 460.7,
             "target_lev": 10.0
         }
     },
@@ -142,5 +142,5 @@
         "asset_losses": {}
     },
     "max_slots": 10,
-    "timestamp": "2026-05-09T16:47:57.663259"
+    "timestamp": "2026-05-09T16:53:03.649425"
 }
