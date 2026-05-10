@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 103.05,
+    "equity": 102.93,
     "z_scores": {
         "BTC": {
-            "val": 3.39,
-            "atr": 137.2143,
+            "val": 2.69,
+            "atr": 144.9286,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:35:30"
+            "updated_at": "07:40:26"
         },
         "ETH": {
-            "val": 3.07,
-            "atr": 4.6286,
+            "val": 2.45,
+            "atr": 4.7429,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:35:31"
+            "updated_at": "07:40:26"
         },
         "xyz:COST": {
             "val": -1.7,
             "atr": 0.6214,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "07:35:31"
+            "updated_at": "07:40:26"
         },
         "xyz:COIN": {
-            "val": 3.41,
-            "atr": 0.3971,
+            "val": 2.61,
+            "atr": 0.3686,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:35:33"
+            "updated_at": "07:40:28"
         },
         "ACE": {
-            "val": 1.51,
+            "val": 1.47,
             "atr": 0.0001,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:35:33"
+            "updated_at": "07:40:28"
         },
         "GALA": {
-            "val": 1.8,
+            "val": 1.63,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:35:33"
+            "updated_at": "07:40:29"
         },
         "xyz:BABA": {
-            "val": -0.56,
+            "val": -0.55,
             "atr": 0.0086,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:35:32"
+            "updated_at": "07:40:27"
         },
         "xyz:BRENTOIL": {
-            "val": 0.5,
-            "atr": 0.0571,
+            "val": 0.81,
+            "atr": 0.0629,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "07:35:32"
+            "updated_at": "07:40:27"
         }
     },
     "active_positions": {
@@ -69,14 +69,14 @@
             "entry_time": 1778380975.764362,
             "tp_p": 79538.75,
             "sl_p": 82768.75,
-            "unrealizedPnl": -2.33,
-            "roe": -15.28,
+            "unrealizedPnl": -2.26,
+            "roe": -14.79,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.62,
             "trail_start": 0.75,
             "trail_exit_p": 80491.75,
-            "curr_p": 81983.5,
+            "curr_p": 81944.5,
             "target_lev": 10.0
         },
         "xyz:COIN": {
@@ -88,14 +88,14 @@
             "entry_time": 1778382378.8129702,
             "tp_p": 200.62572,
             "sl_p": 208.1012,
-            "unrealizedPnl": -2.99,
-            "roe": -19.65,
+            "unrealizedPnl": -2.89,
+            "roe": -18.98,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.09,
             "trail_start": 0.35,
             "trail_exit_p": 202.13286,
-            "curr_p": 206.01,
+            "curr_p": 205.875,
             "target_lev": 10.0
         },
         "ETH": {
@@ -107,23 +107,24 @@
             "entry_time": 1778452458.516558,
             "tp_p": 2336.026,
             "sl_p": 2430.89,
-            "unrealizedPnl": 0.37,
-            "roe": 1.54,
+            "unrealizedPnl": 0.61,
+            "roe": 2.51,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
-            "hwm": 0.17,
+            "hwm": 0.38,
             "trail_start": 0.75,
-            "trail_exit_p": 2374.7648,
-            "curr_p": 2367.95,
+            "trail_exit_p": 2369.7648,
+            "curr_p": 2365.65,
             "target_lev": 10.0
         }
     },
     "daily_stats": {
-        "pnl_usdc": 0.8562550000000001,
-        "weekly_pnl": 12.89736099999999,
+        "pnl_usdc": 0.7511390000000001,
+        "weekly_pnl": 12.79224499999999,
         "wins": 2,
         "losses": 0,
         "asset_pnl": {
+            "ETH": -0.105116,
             "PLATINUM": 0.16656800000000002,
             "ACE": 0.689687
         },
@@ -131,5 +132,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-11T07:35:33.944816"
+    "timestamp": "2026-05-11T07:40:29.231378"
 }
