@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 106.35,
+    "equity": 105.92,
     "z_scores": {
         "BTC": {
-            "val": -1.04,
-            "atr": 40.0714,
+            "val": 0.6,
+            "atr": 106.1429,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:00:07"
+            "updated_at": "07:05:16"
         },
         "ETH": {
-            "val": -0.91,
-            "atr": 1.3286,
+            "val": 0.15,
+            "atr": 2.9929,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:00:07"
+            "updated_at": "07:05:16"
         },
         "xyz:COST": {
             "val": 1.82,
             "atr": 0.7571,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "07:00:08"
+            "updated_at": "07:05:17"
         },
         "xyz:COIN": {
-            "val": -0.96,
-            "atr": 0.1264,
+            "val": 0.11,
+            "atr": 0.2829,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:00:09"
+            "updated_at": "07:05:18"
         },
         "ACE": {
-            "val": -0.39,
-            "atr": 0.0001,
+            "val": -0.14,
+            "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:00:10"
+            "updated_at": "07:05:18"
         },
         "GALA": {
-            "val": -0.98,
+            "val": -0.57,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:00:10"
+            "updated_at": "07:05:19"
         },
         "xyz:BABA": {
-            "val": -2.43,
-            "atr": 0.265,
+            "val": -1.17,
+            "atr": 0.2157,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "07:00:08"
+            "updated_at": "07:05:17"
         },
         "xyz:BRENTOIL": {
-            "val": 1.5,
-            "atr": 0.22,
+            "val": 1.05,
+            "atr": 0.24,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "07:00:09"
+            "updated_at": "07:05:17"
         }
     },
     "active_positions": {
@@ -69,14 +69,14 @@
             "sl": -0.03,
             "tp_p": 2029.0962,
             "sl_p": 2104.702,
-            "unrealizedPnl": 0.03,
-            "roe": 0.56,
+            "unrealizedPnl": 0.04,
+            "roe": 0.61,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.17,
             "trail_start": 0.35,
             "trail_exit_p": 2042.71076,
-            "curr_p": 2042.25,
+            "curr_p": 2042.15,
             "target_lev": 10.0
         },
         "BTC": {
@@ -88,14 +88,14 @@
             "entry_time": 1778380975.764362,
             "tp_p": 79538.75,
             "sl_p": 82768.75,
-            "unrealizedPnl": 0.24,
-            "roe": 1.6,
+            "unrealizedPnl": -0.4,
+            "roe": -2.59,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.62,
             "trail_start": 0.75,
             "trail_exit_p": 80491.75,
-            "curr_p": 80620.5,
+            "curr_p": 80959.5,
             "target_lev": 10.0
         },
         "xyz:COIN": {
@@ -107,14 +107,14 @@
             "entry_time": 1778382378.8129702,
             "tp_p": 200.62572,
             "sl_p": 208.1012,
-            "unrealizedPnl": -0.28,
-            "roe": -1.83,
+            "unrealizedPnl": -0.9,
+            "roe": -5.91,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.09,
             "trail_start": 0.35,
             "trail_exit_p": 202.13286,
-            "curr_p": 202.41000000000003,
+            "curr_p": 203.235,
             "target_lev": 10.0
         }
     },
@@ -130,5 +130,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-11T07:00:10.720944"
+    "timestamp": "2026-05-11T07:05:19.431439"
 }
