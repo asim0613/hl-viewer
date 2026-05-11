@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 105.74,
+    "equity": 105.88,
     "z_scores": {
         "BTC": {
-            "val": 1.92,
-            "atr": 19.3571,
-            "trend_1h": "DOWN",
+            "val": 2.1,
+            "atr": 17.4286,
+            "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "18:22:23"
+            "updated_at": "18:27:24"
         },
         "ETH": {
-            "val": 2.07,
-            "atr": 0.6643,
-            "trend_1h": "DOWN",
+            "val": 1.99,
+            "atr": 0.6714,
+            "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "18:22:23"
+            "updated_at": "18:27:25"
         },
         "xyz:COST": {
             "val": -0.78,
             "atr": 0.3357,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "18:22:24"
+            "updated_at": "18:27:26"
         },
         "xyz:COIN": {
-            "val": 2.51,
-            "atr": 0.1764,
+            "val": 1.5,
+            "atr": 0.1814,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "18:22:25"
+            "updated_at": "18:27:27"
         },
         "ACE": {
-            "val": -1.0,
+            "val": -1.26,
             "atr": 0.0001,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "18:22:25"
+            "updated_at": "18:27:27"
         },
         "GALA": {
-            "val": 1.2,
+            "val": 1.48,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "18:22:25"
+            "updated_at": "18:27:28"
         },
         "xyz:BABA": {
-            "val": 0.79,
-            "atr": 0.005,
+            "val": -2.58,
+            "atr": 0.0343,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "18:22:24"
+            "updated_at": "18:27:26"
         },
         "xyz:BRENTOIL": {
-            "val": -0.96,
-            "atr": 0.0807,
+            "val": -0.71,
+            "atr": 0.0664,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "18:22:24"
+            "updated_at": "18:27:27"
         }
     },
     "active_positions": {
@@ -69,14 +69,14 @@
             "entry_time": 1778380975.764362,
             "tp_p": 79538.75,
             "sl_p": 82768.75,
-            "unrealizedPnl": -0.25,
-            "roe": -1.64,
+            "unrealizedPnl": -0.31,
+            "roe": -2.05,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.62,
             "trail_start": 0.75,
             "trail_exit_p": 80491.75,
-            "curr_p": 80882.5,
+            "curr_p": 80915.5,
             "target_lev": 10.0
         },
         "xyz:BRENTOIL": {
@@ -88,14 +88,14 @@
             "entry_time": 1778476404.1047728,
             "tp_p": 104.01303,
             "sl_p": 100.1913,
-            "unrealizedPnl": -3.9,
-            "roe": -15.05,
+            "unrealizedPnl": -3.78,
+            "roe": -14.57,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.26,
             "trail_start": 0.35,
             "trail_exit_p": 103.41039,
-            "curr_p": 101.735,
+            "curr_p": 101.785,
             "target_lev": 10.0
         }
     },
@@ -116,5 +116,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-11T18:22:25.917858"
+    "timestamp": "2026-05-11T18:27:28.400022"
 }
