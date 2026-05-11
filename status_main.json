@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 107.54,
+    "equity": 108.64,
     "z_scores": {
         "BTC": {
-            "val": -2.36,
-            "atr": 22.9286,
+            "val": -1.29,
+            "atr": 21.7143,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "16:05:43"
+            "updated_at": "16:10:55"
         },
         "ETH": {
-            "val": -1.99,
-            "atr": 0.8429,
+            "val": -1.61,
+            "atr": 1.0286,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "16:05:43"
+            "updated_at": "16:10:55"
         },
         "xyz:COST": {
             "val": -6.1,
             "atr": 0.1714,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "16:05:44"
+            "updated_at": "16:10:55"
         },
         "xyz:COIN": {
-            "val": -1.64,
-            "atr": 0.06,
+            "val": -1.7,
+            "atr": 0.0571,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "16:05:45"
+            "updated_at": "16:10:56"
         },
         "ACE": {
-            "val": -1.84,
-            "atr": 0.0001,
+            "val": -1.36,
+            "atr": 0.0002,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "16:05:45"
+            "updated_at": "16:10:58"
         },
         "GALA": {
-            "val": -0.48,
+            "val": 0.05,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "16:05:46"
+            "updated_at": "16:10:58"
         },
         "xyz:BABA": {
-            "val": -0.61,
-            "atr": 0.0693,
+            "val": 0.61,
+            "atr": 0.0336,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:05:44"
+            "updated_at": "16:10:56"
         },
         "xyz:BRENTOIL": {
-            "val": -1.81,
-            "atr": 0.1286,
+            "val": -1.04,
+            "atr": 0.135,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "16:05:44"
+            "updated_at": "16:10:56"
         }
     },
     "active_positions": {
@@ -69,14 +69,14 @@
             "entry_time": 1778380975.764362,
             "tp_p": 79538.75,
             "sl_p": 82768.75,
-            "unrealizedPnl": 0.09,
-            "roe": 0.61,
+            "unrealizedPnl": -0.04,
+            "roe": -0.25,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.62,
             "trail_start": 0.75,
             "trail_exit_p": 80491.75,
-            "curr_p": 80700.5,
+            "curr_p": 80770.5,
             "target_lev": 10.0
         },
         "xyz:BRENTOIL": {
@@ -88,14 +88,14 @@
             "entry_time": 1778476404.1047728,
             "tp_p": 104.01303,
             "sl_p": 100.1913,
-            "unrealizedPnl": -1.87,
-            "roe": -7.21,
+            "unrealizedPnl": -1.29,
+            "roe": -4.99,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.26,
             "trail_start": 0.35,
             "trail_exit_p": 103.41039,
-            "curr_p": 102.545,
+            "curr_p": 102.775,
             "target_lev": 10.0
         },
         "GALA": {
@@ -107,14 +107,14 @@
             "entry_time": 1778477675.088608,
             "tp_p": 0.00394,
             "sl_p": 0.0041,
-            "unrealizedPnl": 0.27,
-            "roe": 1.05,
+            "unrealizedPnl": 0.17,
+            "roe": 0.67,
             "tp_roe": 4.5,
             "sl_roe": -7.5,
             "hwm": 0.44,
             "trail_start": 0.75,
             "trail_exit_p": 0.004,
-            "curr_p": 0.003989,
+            "curr_p": 0.003994,
             "target_lev": 3
         }
     },
@@ -135,5 +135,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-11T16:05:46.306269"
+    "timestamp": "2026-05-11T16:10:58.759639"
 }
