@@ -1,76 +1,76 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 104.9,
+    "equity": 103.09,
     "z_scores": {
         "BTC": {
-            "val": 2.52,
-            "atr": 41.6429,
+            "val": 1.9,
+            "atr": 42.7143,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:31:21"
+            "updated_at": "21:36:34"
         },
         "ETH": {
-            "val": 1.97,
-            "atr": 1.3286,
+            "val": 1.75,
+            "atr": 1.4357,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:31:21"
+            "updated_at": "21:36:34"
         },
         "xyz:COIN": {
-            "val": 0.25,
-            "atr": 0.2236,
+            "val": 0.12,
+            "atr": 0.1414,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "21:31:23"
+            "updated_at": "21:36:36"
         },
         "xyz:PLATINUM": {
-            "val": 2.51,
-            "atr": 5.5786,
+            "val": 2.62,
+            "atr": 4.9429,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:31:25"
+            "updated_at": "21:36:37"
         },
         "ACE": {
-            "val": 0.13,
-            "atr": 0.0001,
+            "val": -0.38,
+            "atr": 0.0002,
             "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "21:31:21"
+            "trend_4h": "UP",
+            "updated_at": "21:36:35"
         },
         "NEAR": {
-            "val": 0.11,
-            "atr": 0.0017,
+            "val": -0.24,
+            "atr": 0.0015,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:31:22"
+            "updated_at": "21:36:35"
         },
         "LINK": {
-            "val": 0.61,
-            "atr": 0.0102,
+            "val": 1.04,
+            "atr": 0.0101,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:31:22"
+            "updated_at": "21:36:35"
         },
         "xyz:TSM": {
-            "val": 0.59,
-            "atr": 0.1829,
+            "val": 0.8,
+            "atr": 0.1536,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:31:23"
+            "updated_at": "21:36:36"
         },
         "xyz:HOOD": {
-            "val": -0.18,
-            "atr": 0.0325,
+            "val": -0.08,
+            "atr": 0.0226,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "21:31:24"
+            "updated_at": "21:36:37"
         },
         "xyz:NATGAS": {
-            "val": -0.04,
+            "val": -0.05,
             "atr": 0.0033,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:31:24"
+            "updated_at": "21:36:37"
         }
     },
     "active_positions": {
@@ -83,14 +83,14 @@
             "entry_time": 1778380975.764362,
             "tp_p": 79538.75,
             "sl_p": 82768.75,
-            "unrealizedPnl": -1.02,
-            "roe": -6.67,
+            "unrealizedPnl": -0.93,
+            "roe": -6.1,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.62,
             "trail_start": 0.75,
             "trail_exit_p": 80491.75,
-            "curr_p": 81288.5,
+            "curr_p": 81242.5,
             "target_lev": 10.0
         },
         "xyz:BRENTOIL": {
@@ -121,14 +121,14 @@
             "entry_time": 1778492572.6527135,
             "tp_p": 0.13435,
             "sl_p": 0.13981,
-            "unrealizedPnl": 0.06,
-            "roe": 0.22,
+            "unrealizedPnl": 0.22,
+            "roe": 0.88,
             "tp_roe": 4.5,
             "sl_roe": -7.5,
             "hwm": 0.66,
             "trail_start": 0.75,
             "trail_exit_p": 0.13591,
-            "curr_p": 0.1363,
+            "curr_p": 0.136,
             "target_lev": 3
         },
         "xyz:COST": {
@@ -167,5 +167,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-11T21:31:25.600681"
+    "timestamp": "2026-05-11T21:36:38.157714"
 }
