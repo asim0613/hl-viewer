@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 108.95,
+    "equity": 109.48,
     "z_scores": {
         "BTC": {
-            "val": 0.69,
-            "atr": 28.7857,
+            "val": 0.42,
+            "atr": 29.9286,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "15:15:22"
+            "updated_at": "15:20:27"
         },
         "ETH": {
-            "val": 0.76,
-            "atr": 1.0643,
+            "val": 0.46,
+            "atr": 1.1571,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "15:15:23"
+            "updated_at": "15:20:28"
         },
         "xyz:COST": {
-            "val": 1.33,
+            "val": 1.25,
             "atr": 0.2786,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "15:15:23"
+            "updated_at": "15:20:28"
         },
         "xyz:COIN": {
-            "val": 0.23,
-            "atr": 0.0593,
+            "val": -0.15,
+            "atr": 0.0779,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "15:15:24"
+            "updated_at": "15:20:29"
         },
         "ACE": {
-            "val": 0.05,
-            "atr": 0.0002,
+            "val": 0.11,
+            "atr": 0.0001,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "15:15:25"
+            "updated_at": "15:20:29"
         },
         "GALA": {
-            "val": 0.31,
+            "val": 0.23,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "15:15:25"
+            "updated_at": "15:20:30"
         },
         "xyz:BABA": {
-            "val": -0.11,
-            "atr": 0.0657,
+            "val": -0.31,
+            "atr": 0.065,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "15:15:24"
+            "updated_at": "15:20:28"
         },
         "xyz:BRENTOIL": {
-            "val": -1.1,
-            "atr": 0.0529,
+            "val": -0.1,
+            "atr": 0.0586,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "15:15:24"
+            "updated_at": "15:20:29"
         }
     },
     "active_positions": {
@@ -69,14 +69,14 @@
             "entry_time": 1778380975.764362,
             "tp_p": 79538.75,
             "sl_p": 82768.75,
-            "unrealizedPnl": -0.23,
-            "roe": -1.48,
+            "unrealizedPnl": -0.2,
+            "roe": -1.32,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "hwm": 0.62,
             "trail_start": 0.75,
             "trail_exit_p": 80491.75,
-            "curr_p": 80869.5,
+            "curr_p": 80856.5,
             "target_lev": 10.0
         },
         "xyz:BRENTOIL": {
@@ -88,14 +88,14 @@
             "entry_time": 1778476404.1047728,
             "tp_p": 104.01303,
             "sl_p": 100.1913,
-            "unrealizedPnl": -0.08,
-            "roe": -0.29,
+            "unrealizedPnl": 0.34,
+            "roe": 1.31,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "hwm": 0.26,
             "trail_start": 0.35,
             "trail_exit_p": 103.41039,
-            "curr_p": 103.25999999999999,
+            "curr_p": 103.42500000000001,
             "target_lev": 10.0
         },
         "GALA": {
@@ -107,14 +107,14 @@
             "entry_time": 1778477675.088608,
             "tp_p": 0.00394,
             "sl_p": 0.0041,
-            "unrealizedPnl": 0.25,
-            "roe": 0.97,
+            "unrealizedPnl": 0.23,
+            "roe": 0.9,
             "tp_roe": 4.5,
             "sl_roe": -7.5,
             "hwm": 0.44,
             "trail_start": 0.75,
             "trail_exit_p": 0.004,
-            "curr_p": 0.00399,
+            "curr_p": 0.003991,
             "target_lev": 3
         }
     },
@@ -135,5 +135,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-11T15:15:25.622673"
+    "timestamp": "2026-05-11T15:20:30.636557"
 }
