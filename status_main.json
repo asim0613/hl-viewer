@@ -1,64 +1,65 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 112.85,
+    "equity": 112.23,
     "z_scores": {
         "xyz:ORCL": {
-            "val": 2.77,
-            "atr": 0.3864,
+            "val": 2.41,
+            "atr": 0.39,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:29:34"
+            "updated_at": "23:34:51"
         },
         "xyz:PLTR": {
-            "val": -2.2,
-            "atr": 0.2979,
+            "val": -2.25,
+            "atr": 0.3279,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:29:35"
+            "updated_at": "23:34:51"
         },
         "BTC": {
-            "val": -0.56,
-            "atr": 47.2857,
+            "val": -0.71,
+            "atr": 46.5714,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:29:33"
+            "updated_at": "23:34:49"
         },
         "ETH": {
-            "val": -0.75,
-            "atr": 1.7929,
+            "val": -0.74,
+            "atr": 1.7714,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:29:33"
+            "updated_at": "23:34:49"
         },
         "SUI": {
-            "val": -1.12,
-            "atr": 0.0017,
+            "val": -1.33,
+            "atr": 0.0018,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:29:33"
+            "updated_at": "23:34:49"
         },
         "FET": {
-            "val": -0.66,
+            "val": -0.59,
             "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:29:34"
+            "updated_at": "23:34:50"
         },
         "xyz:SILVER": {
-            "val": 2.12,
-            "atr": 0.1181,
-            "trend_1h": "DOWN",
+            "val": 2.76,
+            "atr": 0.1337,
+            "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:29:35"
+            "updated_at": "23:34:51"
         }
     },
     "active_positions": {},
     "daily_stats": {
-        "pnl_usdc": -8.598226000000002,
-        "weekly_pnl": 17.528961999999993,
+        "pnl_usdc": -8.621377000000003,
+        "weekly_pnl": 17.50581099999999,
         "wins": 10,
         "losses": 5,
         "asset_pnl": {
+            "ORCL": -5.697305,
             "PLTR": -6.447972,
             "BTC": 4.733059,
             "MSFT": 1.555126,
@@ -68,12 +69,11 @@
             "AMD": 0.5454740000000001,
             "WIF": -2.905262000000001,
             "NEAR": -5.92826,
-            "BRENTOIL": 0.692117,
-            "ORCL": -5.674154
+            "BRENTOIL": 0.692117
         },
         "date": "2026-05-13",
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-13T23:29:35.525859"
+    "timestamp": "2026-05-13T23:34:51.770797"
 }
