@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 117.49,
+    "equity": 117.09,
     "z_scores": {
         "xyz:ORCL": {
-            "val": -2.29,
-            "atr": 0.1686,
+            "val": -2.53,
+            "atr": 0.18,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:03"
+            "updated_at": "21:35:13"
         },
         "xyz:META": {
-            "val": -0.58,
-            "atr": 0.1836,
+            "val": -0.98,
+            "atr": 0.1064,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:04"
+            "updated_at": "21:35:14"
         },
         "xyz:AMD": {
-            "val": -1.68,
-            "atr": 0.6414,
+            "val": -1.96,
+            "atr": 0.6721,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:04"
+            "updated_at": "21:35:13"
         },
         "xyz:MSFT": {
-            "val": 0.02,
-            "atr": 0.2643,
+            "val": -0.71,
+            "atr": 0.2757,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:30:05"
+            "updated_at": "21:35:15"
         },
         "CFX": {
-            "val": -2.25,
+            "val": -2.29,
             "atr": 0.0001,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:02"
+            "updated_at": "21:35:12"
         },
         "ETH": {
-            "val": 0.16,
-            "atr": 1.1,
+            "val": -0.68,
+            "atr": 1.2714,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:02"
+            "updated_at": "21:35:11"
         },
         "BIGTIME": {
-            "val": -1.37,
+            "val": -0.94,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:01"
+            "updated_at": "21:35:10"
         },
         "FET": {
-            "val": -2.04,
+            "val": -1.76,
             "atr": 0.0002,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:03"
+            "updated_at": "21:35:12"
         },
         "CRV": {
             "val": 0.14,
@@ -66,58 +66,35 @@
             "updated_at": "02:16:17"
         },
         "NEAR": {
-            "val": -0.18,
-            "atr": 0.0016,
+            "val": -0.37,
+            "atr": 0.0018,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:02"
+            "updated_at": "21:35:12"
         },
         "xyz:BABA": {
             "val": -1.09,
             "atr": 0.0371,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "21:30:03"
+            "updated_at": "21:35:13"
         },
         "xyz:COST": {
-            "val": -2.67,
-            "atr": 0.2857,
+            "val": -2.26,
+            "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "21:30:05"
+            "updated_at": "21:35:14"
         }
     },
-    "active_positions": {
-        "NEAR": {
-            "side": -1,
-            "entry_p": 1.558,
-            "size": 177.1,
-            "tp": 0.015,
-            "sl": -0.025,
-            "entry_time": 1778842413.237411,
-            "tp_p": 1.53463,
-            "sl_p": 1.59695,
-            "effective_lev": 10.0,
-            "hwm": 0.61,
-            "hwm_p": 1.54845,
-            "in_trail": false,
-            "unrealizedPnl": 1.36,
-            "roe": 4.94,
-            "tp_roe": 15.0,
-            "sl_roe": -25.0,
-            "trail_start": 0.75,
-            "trail_exit_p": 1.55312,
-            "curr_p": 1.5503,
-            "target_lev": 10.0
-        }
-    },
+    "active_positions": {},
     "daily_stats": {
-        "pnl_usdc": -0.8120220000000006,
-        "weekly_pnl": 13.877736,
-        "wins": 5,
+        "pnl_usdc": 0.22042800000000104,
+        "weekly_pnl": 14.910185999999998,
+        "wins": 6,
         "losses": 2,
         "asset_pnl": {
-            "NEAR": 3.8656930000000007,
+            "NEAR": 4.898143,
             "AMZN": -8.022219,
             "BIGTIME": -2.2371030000000003,
             "CFX": 2.018237,
@@ -129,5 +106,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-15T21:30:05.539319"
+    "timestamp": "2026-05-15T21:35:15.057120"
 }
