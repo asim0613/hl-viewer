@@ -3,60 +3,60 @@
     "equity": 116.19,
     "z_scores": {
         "xyz:ORCL": {
-            "val": -0.12,
-            "atr": 0.0429,
+            "val": 1.34,
+            "atr": 0.075,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:49:02"
+            "updated_at": "19:54:26"
         },
         "xyz:META": {
-            "val": 0.52,
-            "atr": 0.4279,
+            "val": 0.88,
+            "atr": 0.3407,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:49:10"
+            "updated_at": "19:54:27"
         },
         "xyz:AMD": {
-            "val": 1.12,
-            "atr": 0.5586,
+            "val": 1.53,
+            "atr": 0.6771,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:49:03"
+            "updated_at": "19:54:27"
         },
         "xyz:MSFT": {
-            "val": 1.71,
-            "atr": 0.2114,
+            "val": 1.5,
+            "atr": 0.2429,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "19:49:11"
+            "updated_at": "19:54:28"
         },
         "CFX": {
-            "val": 2.14,
+            "val": 1.76,
             "atr": 0.0001,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:49:00"
+            "updated_at": "19:54:25"
         },
         "ETH": {
-            "val": 2.58,
-            "atr": 1.4143,
+            "val": 3.16,
+            "atr": 1.7214,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "19:48:59"
+            "updated_at": "19:54:25"
         },
         "BIGTIME": {
-            "val": 0.91,
+            "val": 1.67,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:48:59"
+            "updated_at": "19:54:24"
         },
         "FET": {
-            "val": 2.41,
+            "val": 2.57,
             "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "19:49:01"
+            "updated_at": "19:54:26"
         },
         "CRV": {
             "val": 0.14,
@@ -66,28 +66,51 @@
             "updated_at": "02:16:17"
         },
         "NEAR": {
-            "val": 2.38,
-            "atr": 0.0017,
+            "val": 2.71,
+            "atr": 0.0021,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:49:00"
+            "updated_at": "19:54:25"
         },
         "xyz:BABA": {
-            "val": 2.2,
-            "atr": 0.0964,
+            "val": 2.79,
+            "atr": 0.1314,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "19:49:02"
+            "updated_at": "19:54:27"
         },
         "xyz:COST": {
-            "val": -1.02,
+            "val": -0.97,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:49:11"
+            "updated_at": "19:54:28"
         }
     },
-    "active_positions": {},
+    "active_positions": {
+        "NEAR": {
+            "side": -1,
+            "entry_p": 1.558,
+            "size": 177.1,
+            "tp": 0.015,
+            "sl": -0.025,
+            "entry_time": 1778842413.237411,
+            "tp_p": 1.53463,
+            "sl_p": 1.59695,
+            "effective_lev": 10.0,
+            "hwm": 0.11,
+            "hwm_p": 1.55635,
+            "in_trail": false,
+            "unrealizedPnl": 0.2,
+            "roe": 0.74,
+            "tp_roe": 15.0,
+            "sl_roe": -25.0,
+            "trail_start": 0.75,
+            "trail_exit_p": 1.56102,
+            "curr_p": 1.55685,
+            "target_lev": 10.0
+        }
+    },
     "daily_stats": {
         "pnl_usdc": -0.6928239999999998,
         "weekly_pnl": 13.996934000000005,
@@ -106,5 +129,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-15T19:49:11.531809"
+    "timestamp": "2026-05-15T19:54:28.469216"
 }
