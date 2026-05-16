@@ -1,41 +1,41 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 117.26,
+    "equity": 117.54,
     "z_scores": {
         "xyz:ORCL": {
-            "val": 1.85,
-            "atr": 0.0336,
+            "val": 1.39,
+            "atr": 0.0743,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "12:59:43"
+            "updated_at": "13:04:40"
         },
         "xyz:MSFT": {
-            "val": 1.65,
-            "atr": 0.0514,
+            "val": 1.57,
+            "atr": 0.0729,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "12:59:44"
+            "updated_at": "13:04:41"
         },
         "CFX": {
-            "val": 0.86,
+            "val": 0.8,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "12:59:42"
+            "updated_at": "13:04:39"
         },
         "ETH": {
-            "val": -0.89,
-            "atr": 0.45,
+            "val": -0.85,
+            "atr": 0.5857,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "12:59:43"
+            "updated_at": "13:04:40"
         },
         "BIGTIME": {
-            "val": 0.08,
+            "val": -1.21,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "12:59:42"
+            "updated_at": "13:04:38"
         },
         "FET": {
             "val": -1.73,
@@ -52,25 +52,25 @@
             "updated_at": "02:16:17"
         },
         "NEAR": {
-            "val": 1.68,
-            "atr": 0.0012,
+            "val": 1.22,
+            "atr": 0.0014,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "12:59:42"
+            "updated_at": "13:04:39"
         },
         "xyz:BABA": {
-            "val": 1.24,
-            "atr": 0.0064,
+            "val": 0.36,
+            "atr": 0.0143,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "12:59:44"
+            "updated_at": "13:04:40"
         },
         "xyz:HOOD": {
-            "val": 1.25,
-            "atr": 0.0112,
+            "val": 1.44,
+            "atr": 0.0096,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "12:59:44"
+            "updated_at": "13:04:41"
         }
     },
     "active_positions": {
@@ -87,13 +87,13 @@
             "hwm": 0.51,
             "hwm_p": 0.012987,
             "in_trail": false,
-            "unrealizedPnl": -0.42,
-            "roe": -1.47,
+            "unrealizedPnl": -0.22,
+            "roe": -0.76,
             "tp_roe": 4.5,
             "sl_roe": -7.5,
             "trail_start": 0.75,
             "trail_exit_p": 0.01303,
-            "curr_p": 0.013117,
+            "curr_p": 0.013086,
             "target_lev": 3
         },
         "NEAR": {
@@ -109,13 +109,13 @@
             "hwm": 0.42,
             "hwm_p": 1.53615,
             "in_trail": false,
-            "unrealizedPnl": -1.78,
-            "roe": -6.26,
+            "unrealizedPnl": -1.56,
+            "roe": -5.48,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "trail_start": 0.75,
             "trail_exit_p": 1.54078,
-            "curr_p": 1.55235,
+            "curr_p": 1.55115,
             "target_lev": 10.0
         },
         "xyz:MSFT": {
@@ -131,13 +131,13 @@
             "hwm": 0,
             "hwm_p": 419.48,
             "in_trail": false,
-            "unrealizedPnl": -0.42,
-            "roe": -1.48,
+            "unrealizedPnl": -0.49,
+            "roe": -1.72,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 420.06727,
-            "curr_p": 420.1,
+            "curr_p": 420.2,
             "target_lev": 10.0
         }
     },
@@ -154,5 +154,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-16T12:59:44.855594"
+    "timestamp": "2026-05-16T13:04:41.710634"
 }
