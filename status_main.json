@@ -1,41 +1,41 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 119.69,
+    "equity": 119.23,
     "z_scores": {
         "xyz:ORCL": {
-            "val": 1.08,
-            "atr": 0.1271,
+            "val": 0.75,
+            "atr": 0.0386,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "11:58:51"
+            "updated_at": "12:04:08"
         },
         "xyz:MSFT": {
-            "val": 1.34,
-            "atr": 0.0614,
-            "trend_1h": "DOWN",
+            "val": 1.56,
+            "atr": 0.0593,
+            "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "11:58:52"
+            "updated_at": "12:04:09"
         },
         "CFX": {
-            "val": 0.19,
+            "val": 0.24,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "11:58:51"
+            "updated_at": "12:04:07"
         },
         "ETH": {
-            "val": 0.38,
-            "atr": 0.3929,
+            "val": 0.84,
+            "atr": 0.4357,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "11:58:51"
+            "updated_at": "12:04:08"
         },
         "BIGTIME": {
-            "val": -1.34,
+            "val": -0.36,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "11:58:50"
+            "updated_at": "12:04:06"
         },
         "FET": {
             "val": -1.73,
@@ -52,25 +52,25 @@
             "updated_at": "02:16:17"
         },
         "NEAR": {
-            "val": -0.35,
+            "val": 0.3,
             "atr": 0.0008,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "11:58:50"
+            "updated_at": "12:04:07"
         },
         "xyz:BABA": {
-            "val": 0.31,
-            "atr": 0.005,
+            "val": 1.7,
+            "atr": 0.0136,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "11:58:52"
+            "updated_at": "12:04:09"
         },
         "xyz:HOOD": {
-            "val": 2.11,
-            "atr": 0.0051,
+            "val": 2.33,
+            "atr": 0.0046,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "11:58:52"
+            "updated_at": "12:04:10"
         }
     },
     "active_positions": {
@@ -87,13 +87,13 @@
             "hwm": 0.51,
             "hwm_p": 0.012987,
             "in_trail": false,
-            "unrealizedPnl": -0.25,
-            "roe": -0.9,
+            "unrealizedPnl": -0.4,
+            "roe": -1.4,
             "tp_roe": 4.5,
             "sl_roe": -7.5,
             "trail_start": 0.75,
             "trail_exit_p": 0.01303,
-            "curr_p": 0.013092,
+            "curr_p": 0.013114,
             "target_lev": 3
         },
         "NEAR": {
@@ -109,13 +109,13 @@
             "hwm": 0.42,
             "hwm_p": 1.53615,
             "in_trail": false,
-            "unrealizedPnl": 0.45,
-            "roe": 1.59,
+            "unrealizedPnl": 0.1,
+            "roe": 0.36,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "trail_start": 0.75,
             "trail_exit_p": 1.54078,
-            "curr_p": 1.54025,
+            "curr_p": 1.54215,
             "target_lev": 10.0
         },
         "xyz:MSFT": {
@@ -131,13 +131,13 @@
             "hwm": 0,
             "hwm_p": 419.48,
             "in_trail": false,
-            "unrealizedPnl": -0.29,
-            "roe": -1.04,
+            "unrealizedPnl": -0.35,
+            "roe": -1.23,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 420.06727,
-            "curr_p": 419.91499999999996,
+            "curr_p": 419.995,
             "target_lev": 10.0
         }
     },
@@ -154,5 +154,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-16T11:58:53.908772"
+    "timestamp": "2026-05-16T12:04:10.771230"
 }
