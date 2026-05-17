@@ -1,48 +1,48 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 126.68,
+    "equity": 127.2,
     "z_scores": {
         "BIGTIME": {
-            "val": 0.96,
+            "val": 1.19,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:12:13"
+            "updated_at": "04:17:20"
         },
         "CFX": {
-            "val": 2.03,
+            "val": 1.13,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:12:13"
+            "updated_at": "04:17:20"
         },
         "NEAR": {
-            "val": 1.65,
-            "atr": 0.0013,
+            "val": -0.28,
+            "atr": 0.0014,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:12:13"
+            "updated_at": "04:17:21"
         },
         "xyz:ORCL": {
-            "val": 0.87,
+            "val": 0.83,
             "atr": 0.04,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:12:14"
+            "updated_at": "04:17:21"
         },
         "xyz:PLTR": {
-            "val": -0.61,
-            "atr": 0.0329,
+            "val": 0.27,
+            "atr": 0.035,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "04:12:14"
+            "updated_at": "04:17:21"
         },
         "xyz:BABA": {
             "val": 1.01,
             "atr": 0.0129,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "04:12:15"
+            "updated_at": "04:17:22"
         }
     },
     "active_positions": {
@@ -59,13 +59,13 @@
             "hwm": 0.14,
             "hwm_p": 418.875,
             "in_trail": false,
-            "unrealizedPnl": -0.44,
-            "roe": -1.57,
+            "unrealizedPnl": -0.48,
+            "roe": -1.68,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 419.46227,
-            "curr_p": 420.14,
+            "curr_p": 420.185,
             "target_lev": 10.0
         },
         "xyz:PLTR": {
@@ -81,13 +81,13 @@
             "hwm": 0.07,
             "hwm_p": 133.2,
             "in_trail": false,
-            "unrealizedPnl": 0.11,
-            "roe": 0.38,
+            "unrealizedPnl": 0.12,
+            "roe": 0.41,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 133.01365,
-            "curr_p": 133.16,
+            "curr_p": 133.165,
             "target_lev": 10.0
         },
         "NEAR": {
@@ -100,16 +100,16 @@
             "tp_p": 1.50439,
             "sl_p": 1.56548,
             "effective_lev": 10.0,
-            "hwm": 0.22,
-            "hwm_p": 1.524,
+            "hwm": 0.55,
+            "hwm_p": 1.51895,
             "in_trail": false,
-            "unrealizedPnl": 0.58,
-            "roe": 1.93,
+            "unrealizedPnl": 1.64,
+            "roe": 5.47,
             "tp_roe": 15.0,
             "sl_roe": -25.0,
             "trail_start": 0.75,
-            "trail_exit_p": 1.52858,
-            "curr_p": 1.52435,
+            "trail_exit_p": 1.52353,
+            "curr_p": 1.51895,
             "target_lev": 10.0
         }
     },
@@ -126,5 +126,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-18T04:12:15.356671"
+    "timestamp": "2026-05-18T04:17:22.444657"
 }
