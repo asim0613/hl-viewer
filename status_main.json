@@ -1,62 +1,62 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 124.62,
+    "equity": 126.4,
     "z_scores": {
         "BIGTIME": {
-            "val": 1.54,
+            "val": 1.61,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:59:46"
+            "updated_at": "00:04:44"
         },
         "CFX": {
-            "val": 1.35,
+            "val": 0.24,
             "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:59:46"
+            "updated_at": "00:04:46"
         },
         "NEAR": {
-            "val": -0.9,
-            "atr": 0.0014,
+            "val": -0.55,
+            "atr": 0.0017,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:59:46"
+            "updated_at": "00:04:46"
         },
         "xyz:ORCL": {
-            "val": -1.67,
-            "atr": 0.1114,
+            "val": 0.32,
+            "atr": 0.1436,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:59:47"
+            "updated_at": "00:04:46"
         },
         "xyz:PLTR": {
-            "val": 0.12,
-            "atr": 0.0164,
+            "val": -0.85,
+            "atr": 0.0257,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:59:47"
+            "updated_at": "00:04:47"
         },
         "xyz:NATGAS": {
-            "val": -1.94,
-            "atr": 0.0003,
+            "val": -1.91,
+            "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:59:48"
+            "updated_at": "00:04:47"
         },
         "xyz:BABA": {
-            "val": -0.86,
-            "atr": 0.0436,
+            "val": 0.09,
+            "atr": 0.0479,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "23:59:48"
+            "updated_at": "00:04:47"
         },
         "xyz:NVDA": {
-            "val": -1.79,
-            "atr": 0.0529,
-            "trend_1h": "UP",
+            "val": -0.73,
+            "atr": 0.0429,
+            "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "23:59:48"
+            "updated_at": "00:04:48"
         }
     },
     "active_positions": {
@@ -73,13 +73,13 @@
             "hwm": 0.14,
             "hwm_p": 418.875,
             "in_trail": false,
-            "unrealizedPnl": -0.66,
-            "roe": -2.34,
+            "unrealizedPnl": -0.68,
+            "roe": -2.42,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 419.46227,
-            "curr_p": 420.46,
+            "curr_p": 420.495,
             "target_lev": 10.0
         },
         "CFX": {
@@ -92,32 +92,29 @@
             "tp_p": 0.06345,
             "sl_p": 0.06603,
             "effective_lev": 5.0,
-            "hwm": 0.75,
-            "hwm_p": 0.063931,
+            "hwm": 1.38,
+            "hwm_p": 0.06353,
             "in_trail": true,
-            "unrealizedPnl": 1.12,
-            "roe": 3.79,
+            "unrealizedPnl": 2.0,
+            "roe": 6.79,
             "tp_roe": 7.5,
             "sl_roe": -12.5,
             "trail_start": 0.75,
-            "trail_exit_p": 0.06412,
-            "curr_p": 0.063929,
+            "trail_exit_p": 0.06372,
+            "curr_p": 0.063542,
             "target_lev": 5
         }
     },
     "daily_stats": {
-        "pnl_usdc": 2.312418,
-        "weekly_pnl": 19.119063999999987,
+        "pnl_usdc": 0,
+        "weekly_pnl": 16.82644599999999,
         "monthly_pnl": 28.535632,
-        "wins": 2,
+        "wins": 0,
         "losses": 0,
-        "asset_pnl": {
-            "PLTR": 0.546869,
-            "ETH": 1.765549
-        },
-        "date": "2026-05-17",
+        "asset_pnl": {},
+        "date": "2026-05-18",
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-17T23:59:49.018336"
+    "timestamp": "2026-05-18T00:04:48.380528"
 }
