@@ -1,13 +1,13 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 150.1,
+    "equity": 148.75,
     "z_scores": {
         "CFX": {
-            "val": 1.09,
+            "val": 0.28,
             "atr": 0.0001,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "17:33:46"
+            "updated_at": "17:38:43"
         },
         "NEAR": {
             "val": 1.89,
@@ -17,39 +17,39 @@
             "updated_at": "02:15:27"
         },
         "xyz:PLTR": {
-            "val": -0.21,
-            "atr": 0.0121,
+            "val": -3.38,
+            "atr": 0.0393,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "17:33:47"
+            "updated_at": "17:38:44"
         },
         "CRV": {
-            "val": 1.73,
-            "atr": 0.0002,
-            "trend_1h": "UP",
-            "trend_4h": "DOWN",
-            "updated_at": "17:33:46"
-        },
-        "xyz:AMD": {
-            "val": 2.53,
-            "atr": 0.5793,
+            "val": 0.91,
+            "atr": 0.0003,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "17:33:48"
+            "updated_at": "17:38:44"
+        },
+        "xyz:AMD": {
+            "val": 2.08,
+            "atr": 0.4971,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "17:38:45"
         },
         "xyz:COIN": {
-            "val": 0.87,
-            "atr": 0.1379,
+            "val": -1.24,
+            "atr": 0.1907,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "17:33:49"
+            "updated_at": "17:38:46"
         },
         "SUSHI": {
-            "val": 0.48,
-            "atr": 0.0001,
+            "val": -0.97,
+            "atr": 0.0003,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "17:33:45"
+            "updated_at": "17:38:42"
         },
         "STX": {
             "val": 0.17,
@@ -63,14 +63,14 @@
             "atr": 0.1857,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "17:33:49"
+            "updated_at": "17:38:46"
         },
         "xyz:MSFT": {
-            "val": -2.33,
-            "atr": 0.12,
+            "val": -3.1,
+            "atr": 0.1279,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "17:33:48"
+            "updated_at": "17:38:45"
         },
         "FTT": {
             "val": -0.06,
@@ -80,64 +80,42 @@
             "updated_at": "02:16:04"
         },
         "YGG": {
-            "val": 1.59,
+            "val": 0.74,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "17:33:45"
+            "updated_at": "17:38:43"
         },
         "xyz:BABA": {
-            "val": 0.02,
-            "atr": 0.0229,
+            "val": -2.94,
+            "atr": 0.06,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "17:33:48"
+            "updated_at": "17:38:45"
         },
         "xyz:GOLD": {
-            "val": -0.66,
-            "atr": 1.1571,
+            "val": -0.77,
+            "atr": 1.4143,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "17:33:49"
+            "updated_at": "17:38:47"
         },
         "BTC": {
-            "val": 0.76,
-            "atr": 22.2857,
+            "val": -1.7,
+            "atr": 45.7143,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "17:33:46"
+            "updated_at": "17:38:44"
         },
         "xyz:META": {
-            "val": 0.58,
-            "atr": 0.14,
+            "val": -2.26,
+            "atr": 0.2329,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "17:33:50"
+            "updated_at": "17:38:47"
         }
     },
     "active_positions": {
-        "CRV": {
-            "side": 1,
-            "entry_p": 0.24083,
-            "size": 1446.1,
-            "tp": 0.015,
-            "sl": -0.025,
-            "entry_time": 1779400911.024003,
-            "tp_p": 0.24444,
-            "sl_p": 0.23481,
-            "effective_lev": 10.0,
-            "hwm": 1.13,
-            "hwm_p": 0.24356,
-            "in_trail": true,
-            "unrealizedPnl": 3.73,
-            "roe": 10.71,
-            "tp_roe": 15.0,
-            "sl_roe": -25.0,
-            "trail_start": 0.75,
-            "trail_exit_p": 0.24284,
-            "curr_p": 0.24341,
-            "target_lev": 10.0
-        },
         "SUSHI": {
             "side": -1,
             "entry_p": 0.21344,
@@ -151,13 +129,13 @@
             "hwm": 0.46,
             "hwm_p": 0.21246,
             "in_trail": false,
-            "unrealizedPnl": -0.48,
-            "roe": -1.39,
+            "unrealizedPnl": 0.12,
+            "roe": 0.34,
             "tp_roe": 4.5,
             "sl_roe": -7.5,
             "trail_start": 0.75,
             "trail_exit_p": 0.2131,
-            "curr_p": 0.21443,
+            "curr_p": 0.2132,
             "target_lev": 3
         },
         "xyz:MSFT": {
@@ -170,26 +148,49 @@
             "tp_p": 417.78489,
             "sl_p": 433.3519,
             "effective_lev": 10.0,
-            "hwm": 0.0,
-            "hwm_p": 420.72,
+            "hwm": 0.13,
+            "hwm_p": 420.2,
             "in_trail": false,
-            "unrealizedPnl": 0.02,
-            "roe": 0.05,
+            "unrealizedPnl": 0.5,
+            "roe": 1.44,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
-            "trail_exit_p": 421.30902,
-            "curr_p": 420.71000000000004,
+            "trail_exit_p": 420.78902,
+            "curr_p": 420.125,
+            "target_lev": 10.0
+        },
+        "xyz:PLTR": {
+            "side": 1,
+            "entry_p": 137.94,
+            "size": 2.569,
+            "tp": 0.007,
+            "sl": -0.03,
+            "entry_time": 1779438962.4668698,
+            "tp_p": 138.90558,
+            "sl_p": 133.8018,
+            "effective_lev": 10.0,
+            "hwm": 0.03,
+            "hwm_p": 137.97500000000002,
+            "in_trail": false,
+            "unrealizedPnl": 0.04,
+            "roe": 0.11,
+            "tp_roe": 7.0,
+            "sl_roe": -30.0,
+            "trail_start": 0.35,
+            "trail_exit_p": 137.78188,
+            "curr_p": 137.95499999999998,
             "target_lev": 10.0
         }
     },
     "daily_stats": {
-        "pnl_usdc": 4.07702,
-        "weekly_pnl": 30.603377000000002,
-        "monthly_pnl": 50.96650100000005,
-        "wins": 5,
+        "pnl_usdc": 5.100849999999999,
+        "weekly_pnl": 31.777657000000005,
+        "monthly_pnl": 52.14078100000005,
+        "wins": 6,
         "losses": 1,
         "asset_pnl": {
+            "CRV": 1.02383,
             "MSFT": 1.048828,
             "SUSHI": -2.4492979999999998,
             "COST": 0.147961,
@@ -200,5 +201,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-22T17:33:50.491955"
+    "timestamp": "2026-05-22T17:38:48.022104"
 }
