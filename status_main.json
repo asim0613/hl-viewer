@@ -1,76 +1,76 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 127.24,
+    "equity": 127.39,
     "z_scores": {
         "xyz:PLTR": {
-            "val": 0.03,
-            "atr": 0.0093,
+            "val": 0.26,
+            "atr": 0.0071,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:29:39"
+            "updated_at": "22:34:42"
         },
         "xyz:MSFT": {
-            "val": -1.06,
-            "atr": 0.0721,
-            "trend_1h": "UP",
+            "val": 0.44,
+            "atr": 0.1107,
+            "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:29:37"
+            "updated_at": "22:34:40"
         },
         "xyz:BABA": {
             "val": -1.39,
             "atr": 0.0114,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:29:40"
+            "updated_at": "22:34:42"
         },
         "xyz:NVDA": {
-            "val": -0.27,
-            "atr": 0.0721,
+            "val": -0.22,
+            "atr": 0.0464,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:29:39"
+            "updated_at": "22:34:41"
         },
         "xyz:PLATINUM": {
-            "val": 0.09,
-            "atr": 0.1286,
+            "val": 0.16,
+            "atr": 0.1,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:29:38"
+            "updated_at": "22:34:40"
         },
         "xyz:SILVER": {
-            "val": -1.85,
-            "atr": 0.0388,
+            "val": -2.33,
+            "atr": 0.0569,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:29:39"
+            "updated_at": "22:34:41"
         },
         "CFX": {
-            "val": -0.67,
+            "val": -1.19,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:29:36"
+            "updated_at": "22:34:39"
         },
         "FET": {
-            "val": -1.51,
-            "atr": 0.0003,
+            "val": -1.24,
+            "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:29:37"
+            "updated_at": "22:34:39"
         },
         "xyz:BRENTOIL": {
-            "val": 1.55,
-            "atr": 0.0333,
+            "val": 1.87,
+            "atr": 0.0396,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:29:38"
+            "updated_at": "22:34:41"
         },
         "xyz:TSM": {
-            "val": 1.84,
-            "atr": 0.445,
-            "trend_1h": "DOWN",
+            "val": 1.88,
+            "atr": 0.4036,
+            "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:29:40"
+            "updated_at": "22:34:42"
         }
     },
     "active_positions": {
@@ -87,13 +87,13 @@
             "hwm": 0.28,
             "hwm_p": 605.67,
             "in_trail": false,
-            "unrealizedPnl": -6.28,
-            "roe": -17.56,
+            "unrealizedPnl": -6.07,
+            "roe": -16.96,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 606.52035,
-            "curr_p": 618.0550000000001,
+            "curr_p": 617.6949999999999,
             "target_lev": 10.0
         },
         "xyz:GOLD": {
@@ -109,13 +109,13 @@
             "hwm": 0.21,
             "hwm_p": 4502.65,
             "in_trail": false,
-            "unrealizedPnl": -2.18,
-            "roe": -6.39,
+            "unrealizedPnl": -2.05,
+            "roe": -6.02,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 4508.96708,
-            "curr_p": 4541.05,
+            "curr_p": 4539.35,
             "target_lev": 10.0
         }
     },
@@ -133,5 +133,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-24T22:29:41.754554"
+    "timestamp": "2026-05-24T22:34:43.454209"
 }
