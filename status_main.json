@@ -1,55 +1,55 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 126.04,
+    "equity": 126.12,
     "z_scores": {
         "xyz:MSFT": {
-            "val": -0.26,
-            "atr": 0.0336,
+            "val": 0.08,
+            "atr": 0.0314,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:39:32"
+            "updated_at": "23:44:48"
         },
         "xyz:PLATINUM": {
             "val": 1.54,
             "atr": 0.5857,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "23:39:30"
+            "updated_at": "23:44:47"
         },
         "xyz:SILVER": {
-            "val": 0.53,
-            "atr": 0.0499,
+            "val": 0.57,
+            "atr": 0.0471,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:39:30"
+            "updated_at": "23:44:47"
         },
         "xyz:BRENTOIL": {
-            "val": 0.04,
+            "val": -0.3,
             "atr": 0.0754,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:39:29"
+            "updated_at": "23:44:46"
         },
         "xyz:HOOD": {
-            "val": -1.13,
-            "atr": 0.0092,
+            "val": -1.45,
+            "atr": 0.0104,
             "trend_1h": "DOWN",
-            "trend_4h": "UP",
-            "updated_at": "23:39:29"
+            "trend_4h": "DOWN",
+            "updated_at": "23:44:46"
         },
         "xyz:COIN": {
-            "val": 1.8,
-            "atr": 0.04,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "23:39:31"
-        },
-        "xyz:LLY": {
-            "val": 0.3,
-            "atr": 0.05,
+            "val": 1.38,
+            "atr": 0.0236,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "23:39:31"
+            "updated_at": "23:44:47"
+        },
+        "xyz:LLY": {
+            "val": -5.01,
+            "atr": 0.5143,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "23:44:48"
         }
     },
     "active_positions": {
@@ -66,13 +66,13 @@
             "hwm": 0.28,
             "hwm_p": 605.67,
             "in_trail": false,
-            "unrealizedPnl": -5.75,
-            "roe": -16.08,
+            "unrealizedPnl": -5.65,
+            "roe": -15.8,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 606.52035,
-            "curr_p": 617.155,
+            "curr_p": 616.99,
             "target_lev": 10.0
         },
         "xyz:GOLD": {
@@ -109,5 +109,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-25T23:39:32.418880"
+    "timestamp": "2026-05-25T23:44:48.738636"
 }
