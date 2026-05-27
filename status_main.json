@@ -3,53 +3,53 @@
     "equity": 137.85,
     "z_scores": {
         "xyz:HOOD": {
-            "val": -2.2,
-            "atr": 0.0359,
+            "val": -2.23,
+            "atr": 0.0316,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "21:02:16"
+            "updated_at": "21:07:06"
         },
         "xyz:BRENTOIL": {
-            "val": 0.96,
-            "atr": 0.0714,
+            "val": 0.65,
+            "atr": 0.0659,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "21:02:15"
+            "updated_at": "21:07:04"
         },
         "xyz:PLTR": {
-            "val": -2.09,
+            "val": -1.5,
+            "atr": 0.0557,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "21:07:04"
+        },
+        "xyz:COPPER": {
+            "val": -0.46,
+            "atr": 0.0038,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "21:07:04"
+        },
+        "xyz:PLATINUM": {
+            "val": -1.22,
+            "atr": 1.1929,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "21:07:05"
+        },
+        "LDO": {
+            "val": -2.94,
+            "atr": 0.0003,
+            "trend_1h": "UP",
+            "trend_4h": "DOWN",
+            "updated_at": "21:07:03"
+        },
+        "xyz:BABA": {
+            "val": -2.07,
             "atr": 0.0421,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "21:02:14"
-        },
-        "xyz:COPPER": {
-            "val": -0.74,
-            "atr": 0.0033,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "21:02:14"
-        },
-        "xyz:PLATINUM": {
-            "val": -1.12,
-            "atr": 1.15,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "21:02:15"
-        },
-        "LDO": {
-            "val": -2.14,
-            "atr": 0.0002,
-            "trend_1h": "UP",
-            "trend_4h": "DOWN",
-            "updated_at": "21:02:14"
-        },
-        "xyz:BABA": {
-            "val": -1.5,
-            "atr": 0.0086,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "21:02:16"
+            "updated_at": "21:07:05"
         }
     },
     "active_positions": {
@@ -66,13 +66,13 @@
             "hwm": 0.28,
             "hwm_p": 605.67,
             "in_trail": false,
-            "unrealizedPnl": -0.18,
-            "roe": -0.49,
+            "unrealizedPnl": -0.22,
+            "roe": -0.62,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 606.52035,
-            "curr_p": 607.69,
+            "curr_p": 607.77,
             "target_lev": 10.0
         },
         "xyz:PLATINUM": {
@@ -88,13 +88,13 @@
             "hwm": 0.05,
             "hwm_p": 1960.05,
             "in_trail": false,
-            "unrealizedPnl": -7.11,
-            "roe": -20.95,
+            "unrealizedPnl": -7.17,
+            "roe": -21.16,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 1957.30726,
-            "curr_p": 1918.05,
+            "curr_p": 1917.65,
             "target_lev": 10.0
         },
         "LDO": {
@@ -110,13 +110,13 @@
             "hwm": 0.25,
             "hwm_p": 0.34126,
             "in_trail": false,
-            "unrealizedPnl": -0.68,
-            "roe": -2.07,
+            "unrealizedPnl": -1.1,
+            "roe": -3.33,
             "tp_roe": 7.5,
             "sl_roe": -12.5,
             "trail_start": 0.75,
             "trail_exit_p": 0.34024,
-            "curr_p": 0.33901,
+            "curr_p": 0.33815,
             "target_lev": 5
         }
     },
@@ -136,5 +136,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-27T21:02:16.836000"
+    "timestamp": "2026-05-27T21:07:07.175865"
 }
