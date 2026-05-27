@@ -1,55 +1,55 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 138.59,
+    "equity": 137.64,
     "z_scores": {
         "xyz:HOOD": {
-            "val": 2.09,
-            "atr": 0.2883,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "23:04:05"
-        },
-        "xyz:BRENTOIL": {
-            "val": 0.42,
-            "atr": 0.0931,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "23:04:02"
-        },
-        "xyz:PLTR": {
-            "val": -0.24,
-            "atr": 0.2821,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "23:04:02"
-        },
-        "xyz:COPPER": {
-            "val": -0.83,
-            "atr": 0.0039,
+            "val": 1.97,
+            "atr": 0.2366,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "23:04:02"
+            "updated_at": "23:09:04"
         },
-        "xyz:PLATINUM": {
-            "val": 0.27,
-            "atr": 1.3143,
+        "xyz:BRENTOIL": {
+            "val": 0.71,
+            "atr": 0.1094,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:04:04"
+            "updated_at": "23:09:03"
+        },
+        "xyz:PLTR": {
+            "val": 0.06,
+            "atr": 0.2207,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "23:09:02"
+        },
+        "xyz:COPPER": {
+            "val": -1.7,
+            "atr": 0.0036,
+            "trend_1h": "UP",
+            "trend_4h": "DOWN",
+            "updated_at": "23:09:03"
+        },
+        "xyz:PLATINUM": {
+            "val": -0.16,
+            "atr": 1.1286,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "23:09:04"
         },
         "LDO": {
-            "val": 0.19,
+            "val": -0.52,
             "atr": 0.0005,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:04:01"
+            "updated_at": "23:09:02"
         },
         "xyz:BABA": {
-            "val": 0.96,
-            "atr": 0.1057,
+            "val": 1.44,
+            "atr": 0.1157,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "23:04:04"
+            "updated_at": "23:09:04"
         }
     },
     "active_positions": {
@@ -66,13 +66,13 @@
             "hwm": 0.28,
             "hwm_p": 605.67,
             "in_trail": false,
-            "unrealizedPnl": -3.17,
-            "roe": -8.87,
+            "unrealizedPnl": -3.47,
+            "roe": -9.71,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 606.52035,
-            "curr_p": 612.78,
+            "curr_p": 613.29,
             "target_lev": 10.0
         },
         "xyz:PLATINUM": {
@@ -88,13 +88,13 @@
             "hwm": 0.05,
             "hwm_p": 1960.05,
             "in_trail": false,
-            "unrealizedPnl": -6.31,
-            "roe": -18.61,
+            "unrealizedPnl": -6.61,
+            "roe": -19.5,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 1957.30726,
-            "curr_p": 1922.65,
+            "curr_p": 1920.9,
             "target_lev": 10.0
         },
         "xyz:BABA": {
@@ -110,13 +110,13 @@
             "hwm": 0,
             "hwm_p": 126.84,
             "in_trail": false,
-            "unrealizedPnl": -0.54,
-            "roe": -1.66,
+            "unrealizedPnl": -1.15,
+            "roe": -3.51,
             "tp_roe": 7.0,
             "sl_roe": -30.0,
             "trail_start": 0.35,
             "trail_exit_p": 127.01758,
-            "curr_p": 127.05,
+            "curr_p": 127.285,
             "target_lev": 10.0
         }
     },
@@ -137,5 +137,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-05-27T23:04:05.401081"
+    "timestamp": "2026-05-27T23:09:05.469614"
 }
