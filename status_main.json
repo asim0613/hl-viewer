@@ -1,139 +1,157 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 103.67,
+    "equity": 98.88,
     "z_scores": {
         "xyz:NVDA": {
-            "val": -1.35,
-            "atr": 0.4143,
+            "val": -0.97,
+            "atr": 0.3786,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:52"
+            "updated_at": "00:03:41"
         },
         "xyz:HOOD": {
-            "val": -0.47,
-            "atr": 0.1631,
+            "val": -1.04,
+            "atr": 0.1372,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:52"
+            "updated_at": "00:03:41"
         },
         "xyz:AMD": {
-            "val": -0.41,
-            "atr": 0.7736,
+            "val": -0.31,
+            "atr": 0.6943,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:57:53"
+            "updated_at": "00:03:41"
         },
         "xyz:BABA": {
-            "val": 1.67,
-            "atr": 0.16,
+            "val": 1.17,
+            "atr": 0.1279,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:54"
+            "updated_at": "00:03:42"
         },
         "xyz:COIN": {
-            "val": -0.79,
-            "atr": 0.2771,
+            "val": -1.08,
+            "atr": 0.3029,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:54"
+            "updated_at": "00:03:42"
         },
         "xyz:PLATINUM": {
-            "val": 0.0,
-            "atr": 0.6,
+            "val": 0.12,
+            "atr": 0.7786,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:54"
+            "updated_at": "00:03:42"
         },
         "xyz:EWJ": {
             "val": 2.01,
             "atr": 0.016,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:57:55"
+            "updated_at": "00:03:43"
         },
         "xyz:JP225": {
             "val": 1.3,
             "atr": 16.7143,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:57:55"
+            "updated_at": "00:03:43"
         },
         "xyz:JPY": {
-            "val": 0.17,
-            "atr": 0.0136,
+            "val": 2.79,
+            "atr": 0.0079,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:57:55"
+            "updated_at": "00:03:43"
         },
         "xyz:EUR": {
-            "val": 0.24,
+            "val": -0.94,
             "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "23:57:56"
+            "updated_at": "00:03:44"
         },
         "NEO": {
-            "val": -1.41,
-            "atr": 0.0033,
+            "val": -1.7,
+            "atr": 0.0025,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:56"
+            "updated_at": "00:03:44"
         },
         "WLD": {
-            "val": -1.26,
-            "atr": 0.0015,
+            "val": -5.76,
+            "atr": 0.0022,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:57:56"
+            "updated_at": "00:03:45"
         },
         "PENDLE": {
-            "val": -1.69,
-            "atr": 0.005,
+            "val": -1.74,
+            "atr": 0.0038,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:57"
+            "updated_at": "00:03:45"
         },
         "DYDX": {
-            "val": -0.34,
+            "val": -0.67,
             "atr": 0.0004,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:57"
+            "updated_at": "00:03:46"
         },
         "LDO": {
-            "val": -1.42,
-            "atr": 0.0006,
+            "val": -2.04,
+            "atr": 0.0008,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:58"
+            "updated_at": "00:03:46"
         },
         "LINK": {
-            "val": -1.34,
-            "atr": 0.013,
+            "val": -1.88,
+            "atr": 0.0127,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:57:58"
+            "updated_at": "00:03:47"
         }
     },
-    "active_positions": {},
+    "active_positions": {
+        "WLD": {
+            "side": 1,
+            "entry_p": 0.41151,
+            "size": 479.3,
+            "entry_size": 479.3,
+            "tp": 0.015,
+            "sl": -0.025,
+            "is_chase": false,
+            "entry_time": 1780412619.259949,
+            "accumulated_pnl": 0.0,
+            "tp_p": 0.41768,
+            "sl_p": 0.40122,
+            "effective_lev": 10.0,
+            "hwm": 0,
+            "hwm_p": 0.41151,
+            "in_trail": false,
+            "unrealizedPnl": -4.92,
+            "roe": -24.96,
+            "tp_roe": 15.0,
+            "sl_roe": -25.0,
+            "trail_start": 0.45,
+            "trail_exit_p": 0.41028,
+            "curr_p": 0.40124,
+            "target_lev": 10.0
+        }
+    },
     "daily_stats": {
-        "pnl_usdc": 9.252001000000002,
-        "weekly_pnl": -33.424821000000016,
-        "monthly_pnl": 5.821889999999951,
-        "wins": 9,
-        "losses": 1,
-        "asset_pnl": {
-            "NVDA": 1.668313,
-            "LDO": -0.002063,
-            "EUR": 5.816485,
-            "PENDLE": 0.16309500000000002,
-            "WLD": 1.191915,
-            "LINK": 0.413442,
-            "UNI": 0.000814
-        },
-        "date": "2026-06-02",
+        "pnl_usdc": 0,
+        "weekly_pnl": -36.95200000000001,
+        "monthly_pnl": 6.068603999999955,
+        "wins": 0,
+        "losses": 0,
+        "asset_pnl": {},
+        "date": "2026-06-03",
         "asset_losses": {}
     },
     "max_slots": 5,
-    "timestamp": "2026-06-02T23:57:59.093997"
+    "timestamp": "2026-06-03T00:03:47.377819"
 }
