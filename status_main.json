@@ -1,104 +1,104 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 88.49,
+    "equity": 88.09,
     "z_scores": {
         "xyz:BABA": {
-            "val": -0.7,
-            "atr": 0.0871,
+            "val": 0.23,
+            "atr": 0.0521,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:00"
+            "updated_at": "06:29:19"
         },
         "xyz:COST": {
             "val": 0.45,
             "atr": 0.0571,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "06:24:02"
+            "updated_at": "06:29:21"
         },
         "xyz:LLY": {
             "val": -1.57,
             "atr": 0.0429,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:02"
+            "updated_at": "06:29:20"
         },
         "xyz:EWZ": {
             "val": -2.12,
             "atr": 0.0128,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:01"
+            "updated_at": "06:29:19"
         },
         "INJ": {
-            "val": -2.22,
-            "atr": 0.0107,
+            "val": -2.21,
+            "atr": 0.01,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:05"
+            "updated_at": "06:29:23"
         },
         "WIF": {
-            "val": -1.88,
+            "val": -1.77,
             "atr": 0.0001,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:03"
+            "updated_at": "06:29:22"
         },
         "BNB": {
-            "val": -1.76,
-            "atr": 0.485,
+            "val": -1.81,
+            "atr": 0.3521,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "06:24:04"
+            "updated_at": "06:29:22"
         },
         "STX": {
-            "val": -2.02,
+            "val": -1.99,
             "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:05"
+            "updated_at": "06:29:23"
         },
         "xyz:GOLD": {
-            "val": -0.79,
-            "atr": 0.4429,
+            "val": -0.74,
+            "atr": 0.3071,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:00"
+            "updated_at": "06:29:18"
         },
         "ZRO": {
-            "val": -2.54,
-            "atr": 0.0012,
+            "val": -2.48,
+            "atr": 0.0009,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "06:24:03"
+            "updated_at": "06:29:21"
         },
         "xyz:BRENTOIL": {
-            "val": 1.64,
-            "atr": 0.0582,
+            "val": 1.62,
+            "atr": 0.0624,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "06:24:00"
+            "updated_at": "06:29:19"
         },
         "xyz:EWY": {
-            "val": 0.18,
-            "atr": 0.1371,
+            "val": -0.75,
+            "atr": 0.1814,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:02"
+            "updated_at": "06:29:20"
         },
         "xyz:SILVER": {
-            "val": -0.84,
-            "atr": 0.0206,
+            "val": -0.79,
+            "atr": 0.0158,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:03"
+            "updated_at": "06:29:21"
         },
         "DYDX": {
-            "val": -1.73,
+            "val": -1.58,
             "atr": 0.0003,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "06:24:04"
+            "updated_at": "06:29:22"
         }
     },
     "active_positions": {
@@ -129,15 +129,17 @@
         }
     },
     "daily_stats": {
-        "pnl_usdc": 0,
-        "weekly_pnl": 0.11084600000000622,
-        "monthly_pnl": -14.252964000000029,
+        "pnl_usdc": -5.501955,
+        "weekly_pnl": -5.391108999999998,
+        "monthly_pnl": -19.754919000000044,
         "wins": 0,
-        "losses": 0,
-        "asset_pnl": {},
+        "losses": 1,
+        "asset_pnl": {
+            "BRENTOIL": -5.501955
+        },
         "date": "2026-06-11",
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-06-11T06:24:05.549476"
+    "timestamp": "2026-06-11T06:29:23.627231"
 }
