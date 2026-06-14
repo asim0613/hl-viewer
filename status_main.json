@@ -1,83 +1,83 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 77.0,
+    "equity": 77.02,
     "z_scores": {
         "xyz:SILVER": {
-            "val": 0.69,
-            "atr": 0.0119,
+            "val": 0.64,
+            "atr": 0.0123,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:56:43"
+            "updated_at": "00:02:04"
         },
         "xyz:NATGAS": {
             "val": -0.21,
             "atr": 0.0001,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:56:43"
+            "updated_at": "00:02:04"
         },
         "xyz:EWZ": {
             "val": -0.83,
             "atr": 0.0086,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "23:56:44"
+            "updated_at": "00:02:04"
         },
         "xyz:HOOD": {
-            "val": -0.38,
-            "atr": 0.0604,
+            "val": -0.15,
+            "atr": 0.0582,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:56:44"
+            "updated_at": "00:02:05"
         },
         "xyz:LLY": {
-            "val": 0.76,
-            "atr": 0.7,
+            "val": 1.31,
+            "atr": 0.25,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:56:44"
+            "updated_at": "00:02:05"
         },
         "xyz:COST": {
             "val": -0.63,
             "atr": 0.1036,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:56:45"
+            "updated_at": "00:02:06"
         },
         "BNB": {
-            "val": -4.31,
-            "atr": 0.4193,
+            "val": -2.86,
+            "atr": 0.3636,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "23:56:46"
+            "updated_at": "00:02:07"
         },
         "TIA": {
-            "val": -1.91,
-            "atr": 0.0003,
+            "val": -1.57,
+            "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:56:46"
+            "updated_at": "00:02:07"
         },
         "DYDX": {
-            "val": -2.27,
+            "val": -1.98,
             "atr": 0.0001,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:56:46"
+            "updated_at": "00:02:07"
         },
         "xyz:BRENTOIL": {
-            "val": -2.88,
-            "atr": 0.2139,
+            "val": -1.51,
+            "atr": 0.165,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "23:56:43"
+            "updated_at": "00:02:03"
         },
         "xyz:AMZN": {
-            "val": 0.66,
-            "atr": 0.0636,
+            "val": 0.9,
+            "atr": 0.0843,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "23:56:45"
+            "updated_at": "00:02:06"
         }
     },
     "active_positions": {
@@ -97,13 +97,13 @@
             "hwm": 0.0,
             "hwm_p": 1.1635,
             "in_trail": false,
-            "unrealizedPnl": -3.6,
-            "roe": -4.81,
+            "unrealizedPnl": -3.66,
+            "roe": -4.9,
             "tp_roe": 6.0,
             "sl_roe": -12.0,
             "trail_start": 0.42,
             "trail_exit_p": 1.1621,
-            "curr_p": 1.1579,
+            "curr_p": 1.1578,
             "target_lev": 10.0
         },
         "xyz:COST": {
@@ -133,17 +133,15 @@
         }
     },
     "daily_stats": {
-        "pnl_usdc": -6.433096,
+        "pnl_usdc": 0,
         "weekly_pnl": -3.175245999999997,
-        "monthly_pnl": -34.58696100000008,
+        "monthly_pnl": -36.67020200000007,
         "wins": 0,
-        "losses": 1,
-        "asset_pnl": {
-            "BABA": -6.433096
-        },
-        "date": "2026-06-14",
+        "losses": 0,
+        "asset_pnl": {},
+        "date": "2026-06-15",
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-06-14T23:56:47.069759"
+    "timestamp": "2026-06-15T00:02:08.083067"
 }
