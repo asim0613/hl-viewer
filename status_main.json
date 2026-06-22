@@ -1,108 +1,84 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 74.67,
+    "equity": 75.1,
     "z_scores": {
         "xyz:COST": {
             "val": 5.89,
             "atr": 0.7457,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:33:34"
+            "updated_at": "22:38:14"
         },
         "xyz:HOOD": {
-            "val": 3.71,
-            "atr": 0.3914,
+            "val": 3.79,
+            "atr": 0.5886,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:33:34"
+            "updated_at": "22:38:15"
         },
         "xyz:BABA": {
-            "val": 1.0,
-            "atr": 0.1507,
+            "val": -1.06,
+            "atr": 0.2157,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:33:35"
+            "updated_at": "22:38:15"
         },
         "xyz:GOOGL": {
-            "val": -4.64,
-            "atr": 0.7064,
+            "val": -2.24,
+            "atr": 1.045,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:33:35"
+            "updated_at": "22:38:16"
         },
         "xyz:LLY": {
-            "val": 5.08,
-            "atr": 1.9714,
+            "val": 1.31,
+            "atr": 3.1571,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:33:35"
+            "updated_at": "22:38:16"
         },
         "ATOM": {
-            "val": 1.18,
-            "atr": 0.0016,
+            "val": 1.28,
+            "atr": 0.0011,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:33:36"
+            "updated_at": "22:38:16"
         },
         "xyz:PLATINUM": {
-            "val": 0.33,
-            "atr": 1.0929,
+            "val": 1.41,
+            "atr": 1.3643,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:33:33"
+            "updated_at": "22:38:13"
         },
         "xyz:EWJ": {
-            "val": 2.48,
-            "atr": 0.0189,
+            "val": 2.8,
+            "atr": 0.0327,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:33:33"
+            "updated_at": "22:38:14"
         },
         "xyz:EWY": {
-            "val": 0.84,
-            "atr": 0.2857,
+            "val": 4.08,
+            "atr": 0.4564,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:33:34"
+            "updated_at": "22:38:15"
         }
     },
-    "active_positions": {
-        "xyz:BABA": {
-            "side": 1,
-            "entry_p": 105.11,
-            "size": 1.686,
-            "entry_size": 1.686,
-            "tp": 0.007,
-            "sl": -0.03,
-            "is_chase": false,
-            "entry_time": 1782135212.2622216,
-            "accumulated_pnl": 0.0,
-            "tp_p": 105.84577,
-            "sl_p": 101.9567,
-            "effective_lev": 10.0,
-            "hwm": 0.55,
-            "hwm_p": 105.69,
-            "in_trail": true,
-            "unrealizedPnl": 0.87,
-            "roe": 4.9,
-            "tp_roe": 7.0,
-            "sl_roe": -30.0,
-            "trail_start": 0.49,
-            "trail_exit_p": 105.54285,
-            "curr_p": 105.625,
-            "target_lev": 10.0
-        }
-    },
+    "active_positions": {},
     "daily_stats": {
-        "pnl_usdc": 0,
-        "weekly_pnl": -7.807402,
-        "monthly_pnl": -78.30756700000005,
-        "wins": 0,
+        "pnl_usdc": 0.42455899999999996,
+        "weekly_pnl": -7.382843,
+        "monthly_pnl": -77.88300800000003,
+        "wins": 1,
         "losses": 0,
-        "asset_pnl": {},
+        "asset_pnl": {
+            "BABA": 0.42455899999999996
+        },
         "date": "2026-06-22",
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-06-22T22:33:36.198496"
+    "timestamp": "2026-06-22T22:38:16.836823"
 }
