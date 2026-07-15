@@ -3,115 +3,119 @@
     "equity": 86.43,
     "z_scores": {
         "xyz:HOOD": {
-            "val": -0.25,
-            "atr": 0.2914,
-            "trend_1h": "UP",
-            "trend_4h": "UP",
-            "updated_at": "00:00:38"
-        },
-        "xyz:ORCL": {
-            "val": 0.28,
-            "atr": 0.2407,
-            "trend_1h": "UP",
-            "trend_4h": "UP",
-            "updated_at": "00:00:40"
-        },
-        "xyz:INTC": {
-            "val": -1.17,
+            "val": 0.17,
             "atr": 0.2821,
             "trend_1h": "DOWN",
+            "trend_4h": "UP",
+            "updated_at": "00:06:04"
+        },
+        "xyz:ORCL": {
+            "val": 0.03,
+            "atr": 0.2029,
+            "trend_1h": "UP",
+            "trend_4h": "UP",
+            "updated_at": "00:06:05"
+        },
+        "xyz:INTC": {
+            "val": -1.06,
+            "atr": 0.2557,
+            "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "00:00:39"
+            "updated_at": "00:06:04"
         },
         "xyz:CL": {
-            "val": -1.79,
-            "atr": 0.1158,
+            "val": -1.4,
+            "atr": 0.0998,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "00:00:38"
+            "updated_at": "00:06:04"
         },
         "ZRO": {
-            "val": -1.12,
-            "atr": 0.0007,
+            "val": -1.35,
+            "atr": 0.0008,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "00:00:42"
+            "updated_at": "00:06:07"
         },
         "DYDX": {
-            "val": -0.4,
+            "val": -0.48,
             "atr": 0.0001,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "00:00:41"
+            "updated_at": "00:06:06"
         },
         "DOT": {
-            "val": 1.14,
-            "atr": 0.0003,
+            "val": 0.76,
+            "atr": 0.0004,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "00:00:42"
+            "updated_at": "00:06:07"
         },
         "xyz:COST": {
-            "val": -0.9,
-            "atr": 0.4671,
+            "val": 0.64,
+            "atr": 0.2829,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "00:00:41"
+            "updated_at": "00:06:06"
         },
         "UNI": {
-            "val": 0.88,
+            "val": 1.01,
             "atr": 0.0039,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "00:00:42"
+            "updated_at": "00:06:08"
         },
         "xyz:NVDA": {
-            "val": -1.38,
-            "atr": 0.2821,
+            "val": -1.47,
+            "atr": 0.2329,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "00:00:38"
+            "updated_at": "00:06:03"
         },
         "xyz:AMD": {
-            "val": -1.43,
-            "atr": 1.5336,
+            "val": -1.44,
+            "atr": 1.44,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "00:00:39"
+            "updated_at": "00:06:05"
         },
         "xyz:AAPL": {
-            "val": 0.83,
-            "atr": 0.3721,
+            "val": 0.63,
+            "atr": 0.3029,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "00:00:39"
+            "updated_at": "00:06:05"
         },
         "JUP": {
-            "val": 0.92,
+            "val": 0.73,
             "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "00:00:41"
+            "updated_at": "00:06:06"
         },
         "ZEN": {
-            "val": 1.13,
-            "atr": 0.0027,
+            "val": 1.06,
+            "atr": 0.0046,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "00:00:42"
+            "updated_at": "00:06:07"
         }
     },
     "active_positions": {},
     "daily_stats": {
-        "pnl_usdc": 0,
-        "weekly_pnl": 14.000717,
-        "monthly_pnl": 3.8300280000000013,
-        "wins": 0,
+        "pnl_usdc": 2.389692,
+        "weekly_pnl": 9.490519,
+        "monthly_pnl": 4.113383000000002,
+        "wins": 3,
         "losses": 0,
-        "asset_pnl": {},
-        "date": "2026-07-16",
+        "asset_pnl": {
+            "AMD": 0.3375,
+            "NVDA": 1.38341,
+            "BABA": 0.6687820000000001
+        },
+        "date": "2026-07-15",
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-07-16T00:00:43.003246"
+    "timestamp": "2026-07-16T00:06:08.052440"
 }
