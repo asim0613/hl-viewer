@@ -1,97 +1,97 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 96.01,
+    "equity": 96.24,
     "z_scores": {
         "CRV": {
-            "val": -0.59,
-            "atr": 0.0002,
+            "val": 0.81,
+            "atr": 0.0004,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "16:00:18"
+            "updated_at": "16:05:19"
         },
         "xyz:NATGAS": {
-            "val": -2.35,
-            "atr": 0.0007,
+            "val": -2.89,
+            "atr": 0.0018,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:00:16"
+            "updated_at": "16:05:16"
         },
         "BCH": {
-            "val": 1.04,
-            "atr": 0.1193,
+            "val": 1.45,
+            "atr": 0.2021,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "16:00:18"
+            "updated_at": "16:05:18"
         },
         "xyz:AMD": {
-            "val": 0.81,
-            "atr": 0.0764,
+            "val": 1.94,
+            "atr": 0.1421,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:00:17"
+            "updated_at": "16:05:18"
         },
         "TIA": {
-            "val": 1.3,
-            "atr": 0.0002,
+            "val": 2.42,
+            "atr": 0.0004,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "16:00:19"
+            "updated_at": "16:05:20"
         },
         "xyz:EWY": {
-            "val": -0.4,
-            "atr": 0.1043,
+            "val": 0.38,
+            "atr": 0.1093,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:00:16"
+            "updated_at": "16:05:17"
         },
         "xyz:PLATINUM": {
-            "val": -1.2,
-            "atr": 0.3357,
+            "val": 0.44,
+            "atr": 0.6357,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "16:00:16"
+            "updated_at": "16:05:17"
         },
         "xyz:COPPER": {
-            "val": -2.44,
-            "atr": 0.0016,
+            "val": -0.6,
+            "atr": 0.0027,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:00:17"
+            "updated_at": "16:05:18"
         },
         "xyz:SP500": {
-            "val": -0.38,
-            "atr": 0.8143,
+            "val": 1.5,
+            "atr": 1.4143,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:00:15"
+            "updated_at": "16:05:16"
         },
         "xyz:CL": {
-            "val": 0.3,
-            "atr": 0.0673,
+            "val": -0.04,
+            "atr": 0.0729,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:00:15"
+            "updated_at": "16:05:16"
         },
         "xyz:META": {
-            "val": 0.42,
-            "atr": 0.0536,
+            "val": 0.93,
+            "atr": 0.0771,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "16:00:17"
+            "updated_at": "16:05:17"
         },
         "CFX": {
-            "val": 0.64,
+            "val": 1.41,
             "atr": 0.0,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "16:00:18"
+            "updated_at": "16:05:19"
         },
         "APT": {
-            "val": 2.27,
-            "atr": 0.0009,
+            "val": 2.72,
+            "atr": 0.0012,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "16:00:19"
+            "updated_at": "16:05:20"
         }
     },
     "active_positions": {
@@ -111,13 +111,13 @@
             "hwm": 0.0,
             "hwm_p": 29511.0,
             "in_trail": false,
-            "unrealizedPnl": -3.08,
-            "roe": -12.89,
+            "unrealizedPnl": -2.75,
+            "roe": -11.5,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 29440.1736,
-            "curr_p": 29130.5,
+            "curr_p": 29171.5,
             "target_lev": 10.0
         },
         "xyz:NATGAS": {
@@ -136,13 +136,13 @@
             "hwm": 0.0,
             "hwm_p": 2.9804,
             "in_trail": false,
-            "unrealizedPnl": -1.75,
-            "roe": -7.48,
+            "unrealizedPnl": -1.41,
+            "roe": -6.02,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 2.98755,
-            "curr_p": 3.0027,
+            "curr_p": 2.99835,
             "target_lev": 10.0
         },
         "xyz:SP500": {
@@ -158,16 +158,16 @@
             "tp_p": 7759.1052,
             "sl_p": 7475.4225,
             "effective_lev": 10.0,
-            "hwm": 0.0,
-            "hwm_p": 7667.1,
+            "hwm": 0.06,
+            "hwm_p": 7671.35,
             "in_trail": false,
-            "unrealizedPnl": -0.06,
-            "roe": -0.25,
+            "unrealizedPnl": 0.13,
+            "roe": 0.57,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
-            "trail_exit_p": 7648.69896,
-            "curr_p": 7665.15,
+            "trail_exit_p": 7652.94896,
+            "curr_p": 7671.45,
             "target_lev": 10.0
         },
         "xyz:COPPER": {
@@ -186,13 +186,13 @@
             "hwm": 0.0,
             "hwm_p": 6.5995,
             "in_trail": false,
-            "unrealizedPnl": -0.83,
-            "roe": -3.64,
+            "unrealizedPnl": -0.48,
+            "roe": -2.09,
             "tp_roe": 7.0,
             "sl_roe": -15.0,
             "trail_start": 0.49,
             "trail_exit_p": 6.59026,
-            "curr_p": 6.5755,
+            "curr_p": 6.5857,
             "target_lev": 10.0
         }
     },
@@ -209,5 +209,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-09-03T16:00:19.924609"
+    "timestamp": "2026-09-03T16:05:20.684385"
 }
