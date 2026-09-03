@@ -1,97 +1,97 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 100.37,
+    "equity": 100.86,
     "z_scores": {
         "CRV": {
-            "val": 0.14,
+            "val": 0.21,
             "atr": 0.0005,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:11:06"
+            "updated_at": "22:16:10"
         },
         "xyz:NATGAS": {
-            "val": -1.08,
-            "atr": 0.0041,
+            "val": -0.74,
+            "atr": 0.0031,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:11:04"
+            "updated_at": "22:16:08"
         },
         "BCH": {
-            "val": 1.08,
-            "atr": 0.19,
+            "val": 1.12,
+            "atr": 0.1657,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:11:05"
+            "updated_at": "22:16:10"
         },
         "xyz:AMD": {
-            "val": 0.26,
-            "atr": 0.2379,
-            "trend_1h": "DOWN",
+            "val": 1.35,
+            "atr": 0.2143,
+            "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:11:05"
+            "updated_at": "22:16:09"
         },
         "TIA": {
-            "val": 0.09,
+            "val": 0.42,
             "atr": 0.0002,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:11:07"
+            "updated_at": "22:16:11"
         },
         "xyz:EWY": {
-            "val": 1.35,
-            "atr": 0.1264,
+            "val": 1.67,
+            "atr": 0.1029,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:11:04"
+            "updated_at": "22:16:08"
         },
         "xyz:PLATINUM": {
-            "val": 1.57,
-            "atr": 1.9143,
+            "val": 1.28,
+            "atr": 1.8,
             "trend_1h": "UP",
-            "trend_4h": "DOWN",
-            "updated_at": "22:11:04"
+            "trend_4h": "UP",
+            "updated_at": "22:16:08"
         },
         "xyz:COPPER": {
-            "val": 1.53,
-            "atr": 0.0023,
+            "val": 1.79,
+            "atr": 0.0021,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:11:05"
+            "updated_at": "22:16:09"
         },
         "xyz:SP500": {
-            "val": 1.46,
-            "atr": 1.8143,
+            "val": 1.88,
+            "atr": 1.5,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:11:03"
+            "updated_at": "22:16:07"
         },
         "xyz:CL": {
-            "val": -1.69,
-            "atr": 0.133,
+            "val": -1.86,
+            "atr": 0.106,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:11:03"
+            "updated_at": "22:16:07"
         },
         "xyz:META": {
-            "val": 2.43,
-            "atr": 0.705,
+            "val": 2.91,
+            "atr": 0.7714,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:11:04"
+            "updated_at": "22:16:09"
         },
         "CFX": {
-            "val": -0.77,
+            "val": -1.22,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:11:06"
+            "updated_at": "22:16:11"
         },
         "APT": {
-            "val": -0.45,
+            "val": -0.37,
             "atr": 0.0006,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:11:07"
+            "updated_at": "22:16:11"
         }
     },
     "active_positions": {
@@ -111,13 +111,13 @@
             "hwm": 0.0,
             "hwm_p": 29511.0,
             "in_trail": false,
-            "unrealizedPnl": -2.79,
-            "roe": -11.67,
+            "unrealizedPnl": -2.55,
+            "roe": -10.66,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 29440.1736,
-            "curr_p": 29166.5,
+            "curr_p": 29196.5,
             "target_lev": 10.0
         },
         "xyz:NATGAS": {
@@ -136,13 +136,13 @@
             "hwm": 0.0,
             "hwm_p": 2.9804,
             "in_trail": false,
-            "unrealizedPnl": -0.43,
-            "roe": -1.83,
+            "unrealizedPnl": -0.34,
+            "roe": -1.44,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 2.98755,
-            "curr_p": 2.98585,
+            "curr_p": 2.9847,
             "target_lev": 10.0
         },
         "xyz:SP500": {
@@ -161,13 +161,13 @@
             "hwm": 0.36,
             "hwm_p": 7694.55,
             "in_trail": false,
-            "unrealizedPnl": 0.62,
-            "roe": 2.68,
+            "unrealizedPnl": 0.77,
+            "roe": 3.36,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 7676.14896,
-            "curr_p": 7687.65,
+            "curr_p": 7692.85,
             "target_lev": 10.0
         }
     },
@@ -185,5 +185,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-09-03T22:11:07.811484"
+    "timestamp": "2026-09-03T22:16:11.869542"
 }
