@@ -1,97 +1,97 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 123.05,
+    "equity": 123.12,
     "z_scores": {
         "xyz:AMD": {
-            "val": 0.23,
-            "atr": 0.3521,
+            "val": 0.53,
+            "atr": 0.3164,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:16:26"
+            "updated_at": "19:21:52"
         },
         "xyz:HOOD": {
-            "val": -0.65,
-            "atr": 0.0579,
+            "val": -0.37,
+            "atr": 0.0521,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:16:29"
+            "updated_at": "19:21:55"
         },
         "JTO": {
-            "val": -1.55,
-            "atr": 0.0006,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "19:16:33"
-        },
-        "SOL": {
-            "val": -1.9,
-            "atr": 0.12,
-            "trend_1h": "DOWN",
-            "trend_4h": "UP",
-            "updated_at": "19:16:34"
-        },
-        "xyz:ORCL": {
-            "val": -0.76,
-            "atr": 0.0414,
-            "trend_1h": "DOWN",
-            "trend_4h": "DOWN",
-            "updated_at": "19:16:31"
-        },
-        "LDO": {
-            "val": -1.59,
+            "val": -1.46,
             "atr": 0.0004,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:16:33"
+            "updated_at": "19:21:59"
+        },
+        "SOL": {
+            "val": -1.63,
+            "atr": 0.0793,
+            "trend_1h": "DOWN",
+            "trend_4h": "UP",
+            "updated_at": "19:22:01"
+        },
+        "xyz:ORCL": {
+            "val": -0.49,
+            "atr": 0.0329,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "19:21:58"
+        },
+        "LDO": {
+            "val": -1.46,
+            "atr": 0.0004,
+            "trend_1h": "DOWN",
+            "trend_4h": "DOWN",
+            "updated_at": "19:22:00"
         },
         "xyz:COPPER": {
-            "val": -0.86,
-            "atr": 0.0009,
+            "val": -0.58,
+            "atr": 0.0007,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:16:27"
+            "updated_at": "19:21:53"
         },
         "xyz:NVDA": {
-            "val": -0.21,
-            "atr": 0.065,
+            "val": -0.41,
+            "atr": 0.0607,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "19:16:25"
+            "updated_at": "19:21:51"
         },
         "xyz:AAPL": {
-            "val": -0.71,
-            "atr": 0.0386,
+            "val": -0.06,
+            "atr": 0.0436,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "19:16:28"
+            "updated_at": "19:21:54"
         },
         "xyz:EWY": {
-            "val": -0.19,
-            "atr": 0.0414,
-            "trend_1h": "UP",
+            "val": 0.14,
+            "atr": 0.045,
+            "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:16:30"
+            "updated_at": "19:21:56"
         },
         "xyz:GOOGL": {
-            "val": 0.78,
-            "atr": 0.0707,
+            "val": 0.71,
+            "atr": 0.0514,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "19:16:31"
+            "updated_at": "19:21:57"
         },
         "ZRO": {
-            "val": -1.61,
-            "atr": 0.004,
+            "val": -1.79,
+            "atr": 0.0038,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "19:16:35"
+            "updated_at": "19:22:01"
         },
         "ARB": {
-            "val": -1.58,
-            "atr": 0.0003,
+            "val": -1.44,
+            "atr": 0.0002,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "19:16:36"
+            "updated_at": "19:22:02"
         }
     },
     "active_positions": {
@@ -111,13 +111,13 @@
             "hwm": 0.0,
             "hwm_p": 68779.0,
             "in_trail": false,
-            "unrealizedPnl": -2.67,
-            "roe": -9.74,
+            "unrealizedPnl": -2.62,
+            "roe": -9.56,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 68613.9304,
-            "curr_p": 68109.0,
+            "curr_p": 68121.5,
             "target_lev": 10.0
         },
         "xyz:COPPER": {
@@ -133,16 +133,16 @@
             "tp_p": 6.69004,
             "sl_p": 6.83826,
             "effective_lev": 10.0,
-            "hwm": 0.16,
-            "hwm_p": 6.7262,
+            "hwm": 0.01,
+            "hwm_p": 6.7362,
             "in_trail": false,
-            "unrealizedPnl": 0.11,
-            "roe": 0.4,
+            "unrealizedPnl": 0.04,
+            "roe": 0.13,
             "tp_roe": 7.0,
             "sl_roe": -15.0,
             "trail_start": 0.49,
-            "trail_exit_p": 6.73563,
-            "curr_p": 6.7345,
+            "trail_exit_p": 6.74563,
+            "curr_p": 6.7363,
             "target_lev": 10.0
         },
         "xyz:TSLA": {
@@ -158,16 +158,16 @@
             "tp_p": 379.66192,
             "sl_p": 365.781,
             "effective_lev": 10.0,
-            "hwm": 0.14,
-            "hwm_p": 375.685,
+            "hwm": 0.15,
+            "hwm_p": 375.735,
             "in_trail": false,
-            "unrealizedPnl": 0.4,
-            "roe": 1.36,
+            "unrealizedPnl": 0.37,
+            "roe": 1.27,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
-            "trail_exit_p": 374.78462,
-            "curr_p": 375.67,
+            "trail_exit_p": 374.83462,
+            "curr_p": 375.635,
             "target_lev": 10.0
         }
     },
@@ -182,5 +182,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-10-14T19:16:37.354079"
+    "timestamp": "2026-10-14T19:22:03.520780"
 }
