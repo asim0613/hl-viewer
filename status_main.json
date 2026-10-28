@@ -1,90 +1,90 @@
 {
     "bot_id": "HL_INTEGRATED_MASTER",
-    "equity": 88.98,
+    "equity": 88.56,
     "z_scores": {
         "JTO": {
-            "val": -2.34,
-            "atr": 0.0003,
+            "val": -1.86,
+            "atr": 0.0006,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:27:54"
+            "updated_at": "22:33:00"
         },
         "xyz:AAPL": {
-            "val": 1.24,
-            "atr": 0.0493,
+            "val": 1.32,
+            "atr": 0.2593,
             "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:27:49"
+            "updated_at": "22:32:55"
         },
         "xyz:INTC": {
-            "val": -1.8,
-            "atr": 0.0867,
+            "val": -2.3,
+            "atr": 0.2134,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:27:50"
+            "updated_at": "22:32:56"
         },
         "BCH": {
-            "val": -1.67,
-            "atr": 0.22,
+            "val": -1.57,
+            "atr": 0.2486,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:27:53"
+            "updated_at": "22:32:59"
         },
         "xyz:META": {
-            "val": 2.36,
-            "atr": 0.2579,
-            "trend_1h": "DOWN",
+            "val": -1.0,
+            "atr": 0.75,
+            "trend_1h": "UP",
             "trend_4h": "DOWN",
-            "updated_at": "22:27:46"
+            "updated_at": "22:32:52"
         },
         "UNI": {
-            "val": -2.33,
-            "atr": 0.0067,
+            "val": -1.6,
+            "atr": 0.0103,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:27:52"
+            "updated_at": "22:32:58"
         },
         "xyz:AMD": {
-            "val": 0.71,
-            "atr": 0.5721,
+            "val": 0.97,
+            "atr": 1.7021,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:27:47"
+            "updated_at": "22:32:53"
         },
         "xyz:GOLD": {
-            "val": -0.11,
-            "atr": 0.8214,
+            "val": -0.85,
+            "atr": 0.9429,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:27:45"
+            "updated_at": "22:32:51"
         },
         "xyz:XYZ100": {
-            "val": -0.37,
-            "atr": 5.5,
+            "val": -0.13,
+            "atr": 12.2857,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:27:48"
+            "updated_at": "22:32:54"
         },
         "xyz:NATGAS": {
-            "val": -0.42,
-            "atr": 0.0012,
+            "val": -0.43,
+            "atr": 0.001,
             "trend_1h": "DOWN",
             "trend_4h": "UP",
-            "updated_at": "22:27:50"
+            "updated_at": "22:32:56"
         },
         "xyz:TSLA": {
-            "val": -0.39,
-            "atr": 0.3614,
+            "val": -3.38,
+            "atr": 0.6986,
             "trend_1h": "UP",
             "trend_4h": "UP",
-            "updated_at": "22:27:51"
+            "updated_at": "22:32:57"
         },
         "SEI": {
-            "val": -2.33,
+            "val": -1.8,
             "atr": 0.0,
             "trend_1h": "DOWN",
             "trend_4h": "DOWN",
-            "updated_at": "22:27:55"
+            "updated_at": "22:33:01"
         }
     },
     "active_positions": {
@@ -104,13 +104,13 @@
             "hwm": 0.0,
             "hwm_p": 63414.0,
             "in_trail": false,
-            "unrealizedPnl": -3.2,
-            "roe": -15.23,
+            "unrealizedPnl": -3.55,
+            "roe": -16.92,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 63566.1936,
-            "curr_p": 64380.0,
+            "curr_p": 64487.0,
             "target_lev": 10.0
         },
         "xyz:NATGAS": {
@@ -129,13 +129,13 @@
             "hwm": 0.69,
             "hwm_p": 3.04445,
             "in_trail": false,
-            "unrealizedPnl": 0.54,
-            "roe": 2.63,
+            "unrealizedPnl": 0.41,
+            "roe": 2.0,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
             "trail_exit_p": 3.05181,
-            "curr_p": 3.0575,
+            "curr_p": 3.05945,
             "target_lev": 10.0
         },
         "xyz:GOLD": {
@@ -151,16 +151,41 @@
             "tp_p": 4006.834,
             "sl_p": 4156.8875,
             "effective_lev": 10.0,
-            "hwm": 0.09,
-            "hwm_p": 4052.05,
+            "hwm": 0.12,
+            "hwm_p": 4050.65,
             "in_trail": false,
-            "unrealizedPnl": 0.13,
-            "roe": 0.63,
+            "unrealizedPnl": 0.26,
+            "roe": 1.2,
             "tp_roe": 12.0,
             "sl_roe": -25.0,
             "trail_start": 0.84,
-            "trail_exit_p": 4061.7832,
-            "curr_p": 4052.95,
+            "trail_exit_p": 4060.3832,
+            "curr_p": 4050.65,
+            "target_lev": 10.0
+        },
+        "xyz:TSLA": {
+            "side": 1,
+            "entry_p": 409.525,
+            "size": 0.514,
+            "entry_size": 0.514,
+            "tp": 0.012,
+            "sl": -0.025,
+            "is_chase": false,
+            "entry_time": 1793194369.5581396,
+            "accumulated_pnl": 0.0,
+            "tp_p": 414.4393,
+            "sl_p": 399.28687,
+            "effective_lev": 10.0,
+            "hwm": 0,
+            "hwm_p": 409.525,
+            "in_trail": false,
+            "unrealizedPnl": -0.23,
+            "roe": -1.11,
+            "tp_roe": 12.0,
+            "sl_roe": -25.0,
+            "trail_start": 0.84,
+            "trail_exit_p": 408.54214,
+            "curr_p": 409.07,
             "target_lev": 10.0
         }
     },
@@ -178,5 +203,5 @@
         "asset_losses": {}
     },
     "max_slots": 4,
-    "timestamp": "2026-10-28T22:27:55.822593"
+    "timestamp": "2026-10-28T22:33:02.043906"
 }
